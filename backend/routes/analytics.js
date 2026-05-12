@@ -1,25 +1,25 @@
 const express = require('express');
 const router = express.Router();
-const supabase = require('../config/supabase');
+const db = require('../config/db');
 
 // @route   GET /api/analytics/overview
 // @access  Public
 router.get('/overview', async (req, res) => {
     try {
-        const { count: totalPredictions } = await supabase
+        const { count: totalPredictions } = await db
             .from('predictions')
             .select('*', { count: 'exact', head: true });
 
         const last30Days = new Date();
         last30Days.setDate(last30Days.getDate() - 30);
 
-        const { count: recentCount } = await supabase
+        const { count: recentCount } = await db
             .from('predictions')
             .select('*', { count: 'exact', head: true })
             .gte('created_at', last30Days.toISOString());
 
         // Severity distribution — fetch all and group in JS
-        const { data: allPreds } = await supabase
+        const { data: allPreds } = await db
             .from('predictions')
             .select('severity');
 
@@ -31,7 +31,7 @@ router.get('/overview', async (req, res) => {
         const severityDistribution = Object.entries(severityMap).map(([_id, count]) => ({ _id, count }));
 
         // Top diseases
-        const { data: diseasePreds } = await supabase
+        const { data: diseasePreds } = await db
             .from('predictions')
             .select('disease');
 
@@ -69,7 +69,7 @@ router.get('/trends', async (req, res) => {
         const startDate = new Date();
         startDate.setDate(startDate.getDate() - days);
 
-        const { data: preds } = await supabase
+        const { data: preds } = await db
             .from('predictions')
             .select('created_at, symptoms, disease')
             .gte('created_at', startDate.toISOString());
@@ -125,7 +125,7 @@ router.get('/trends', async (req, res) => {
 // @access  Public
 router.get('/severity-distribution', async (req, res) => {
     try {
-        const { data: preds } = await supabase
+        const { data: preds } = await db
             .from('predictions')
             .select('severity, triage');
 

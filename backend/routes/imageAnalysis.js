@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { protect } = require('../middleware/auth');
-const supabase = require('../config/supabase');
+const db = require('../config/db');
 
 // @route   POST /api/image-analysis
 // @access  Private
@@ -13,7 +13,7 @@ router.post('/', protect, async (req, res) => {
             return res.status(400).json({ success: false, message: 'Condition name is required' });
         }
 
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('image_analyses')
             .insert({
                 user_id: req.user.id,
@@ -43,7 +43,7 @@ router.get('/history', protect, async (req, res) => {
     try {
         const limit = parseInt(req.query.limit) || 20;
 
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('image_analyses')
             .select('id, user_id, original_file_name, condition, severity, related_conditions, recommendations, body_part, created_at')
             .eq('user_id', req.user.id)
@@ -62,7 +62,7 @@ router.get('/history', protect, async (req, res) => {
 // @access  Private
 router.get('/:id', protect, async (req, res) => {
     try {
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('image_analyses')
             .select('*')
             .eq('id', req.params.id)

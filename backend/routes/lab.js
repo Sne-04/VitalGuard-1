@@ -1,9 +1,9 @@
 const express = require('express');
 const multer = require('multer');
 const { PdfReader } = require('pdfreader');
-const Anthropic = require('@anthropic-ai/sdk');
+
 const { protect } = require('../middleware/auth');
-const supabase = require('../config/supabase');
+const db = require('../config/db');
 
 const router = express.Router();
 const upload = multer({
@@ -18,7 +18,7 @@ const upload = multer({
     }
 });
 
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const llmFallback = require('../services/llmFallback');
 
 // Helper: extract text from PDF buffer using pdfreader
 function extractTextFromPDF(buffer) {
@@ -28,7 +28,6 @@ function extractTextFromPDF(buffer) {
             if (err) {
                 reject(err);
             } else if (!item) {
-                // End of file
                 resolve(text);
             } else if (item.text) {
                 text += item.text + ' ';
@@ -98,14 +97,7 @@ Return this exact structure:
   "overallInsight": "2-3 sentence plain English summary of the overall report"
 }`;
 
-        const message = await anthropic.messages.create({
-            model: 'claude-3-5-sonnet-20241022',
-            max_tokens: 4096,
-            system: systemPrompt,
-            messages: [{ role: 'user', content: `Lab Report Text:\n${extractedText}` }]
-        });
-
-        const rawText = message.content[0].text;
+        const rawText = await llmFallback.analyze(systemPrompt, `Lab Report Text:\n${extractedText}`);
         const cleanJson = rawText.replace(/```json|```/g, '').trim();
         const analysis = JSON.parse(cleanJson);
 
@@ -116,7 +108,7 @@ Return this exact structure:
             });
         }
 
-        const { data: report, error } = await supabase
+        const { data: report, error } = await db
             .from('lab_reports')
             .insert({
                 user_id: req.user.id,
@@ -138,7 +130,7 @@ Return this exact structure:
 
 router.get('/history', protect, async (req, res) => {
     try {
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('lab_reports')
             .select('*')
             .eq('user_id', req.user.id)

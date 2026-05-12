@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-blue.svg)](https://react.dev)
-[![Supabase](https://img.shields.io/badge/Database-Supabase-green.svg)](https://supabase.com)
+[![NeonDB](https://img.shields.io/badge/Database-NeonDB-green.svg)](https://db.com)
 [![Python](https://img.shields.io/badge/Python-3.10+-yellow.svg)](https://python.org)
 
 **VitalGuard AI** is a full-stack health monitoring platform that uses machine learning and AI to analyze symptoms, predict diseases, monitor vitals, and interpret lab reports — all in real time.
@@ -26,7 +26,7 @@
 - 🖼️ **Image AI** — Skin/medical image condition detection
 - 📈 **Analytics Dashboard** — Historical trends, disease distribution charts
 - 🔒 **Secure Authentication** — JWT-based auth with bcrypt password hashing
-- 🗄️ **Supabase Backend** — PostgreSQL database with Row Level Security
+- 🗄️ **NeonDB Backend** — PostgreSQL database with Row Level Security
 
 ---
 
@@ -34,7 +34,7 @@
 
 ```
 ┌─────────────────┐      ┌──────────────────────┐      ┌───────────────┐
-│   React Frontend│ ───► │  Express.js Backend   │ ───► │   Supabase    │
+│   React Frontend│ ───► │  Express.js Backend   │ ───► │   NeonDB    │
 │   (Vite, :3039) │      │  (Node.js, :5002)     │      │  (PostgreSQL) │
 └─────────────────┘      └──────────────────────┘      └───────────────┘
                                     │
@@ -54,7 +54,7 @@
 ### Prerequisites
 - Node.js 18+
 - Python 3.10+
-- A [Supabase](https://supabase.com) account
+- A [NeonDB](https://db.com) account
 
 ### 1. Clone the Repository
 
@@ -77,8 +77,8 @@ PORT=5002
 NODE_ENV=development
 JWT_SECRET=your_jwt_secret_here
 
-# Supabase
-SUPABASE_URL=https://your-project-ref.supabase.co
+# NeonDB
+SUPABASE_URL=https://your-project-ref.db.co
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 SUPABASE_ANON_KEY=your_anon_key_here
 
@@ -89,9 +89,9 @@ ML_API_URL=http://127.0.0.1:5001
 ANTHROPIC_API_KEY=your_anthropic_key_here
 ```
 
-### 3. Set Up Supabase Tables
+### 3. Set Up NeonDB Tables
 
-1. Go to your [Supabase SQL Editor](https://supabase.com/dashboard/project/_/sql/new)
+1. Go to your [NeonDB SQL Editor](https://db.com/dashboard/project/_/sql/new)
 2. Run the SQL from `ml-models/schema.sql` (creates all 5 tables)
 
 ### 4. Set Up the ML API
@@ -140,7 +140,7 @@ Open **http://localhost:3039** 🎉
 VitalGuard/
 ├── backend/                  # Express.js API Server
 │   ├── config/
-│   │   └── supabase.js       # Supabase client
+│   │   └── db.js       # NeonDB client
 │   ├── middleware/
 │   │   └── auth.js           # JWT middleware
 │   ├── routes/
@@ -174,7 +174,7 @@ VitalGuard/
 
 ---
 
-## 🗄️ Database Schema (Supabase)
+## 🗄️ Database Schema (NeonDB)
 
 | Table | Description |
 |-------|-------------|
@@ -192,7 +192,7 @@ VitalGuard/
 |-------|-----------|
 | Frontend | React 18, Vite, Recharts, Lucide Icons |
 | Backend | Node.js, Express.js, JWT, bcryptjs |
-| Database | Supabase (PostgreSQL) |
+| Database | NeonDB (PostgreSQL) |
 | ML API | Python, Flask, scikit-learn |
 | AI | Anthropic Claude 3.5 Sonnet |
 | Styling | CSS Modules / Vanilla CSS |

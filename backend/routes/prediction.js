@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const { protect } = require('../middleware/auth');
-const supabase = require('../config/supabase');
+const db = require('../config/db');
 const axios = require('axios');
+const llmFallback = require('../services/llmFallback');
 
 const ML_API_URL = process.env.ML_API_URL || 'http://localhost:5001';
 
@@ -16,7 +17,7 @@ router.post('/', protect, [
     body('symptoms').isArray({ min: 1 }).withMessage('Please provide at least one symptom'),
     body('duration').isInt({ min: 1 }).withMessage('Duration must be at least 1 day'),
     body('age').isInt({ min: 1, max: 120 }).withMessage('Age must be between 1 and 120'),
-    body('gender').isIn(['Male', 'Female', 'Other']).withMessage('Please select a valid gender')
+    body('gender').isIn(['Male', 'Female', 'Other', 'Not specified']).withMessage('Please select a valid gender')
 ], async (req, res) => {
     try {
         const errors = validationResult(req);
@@ -38,8 +39,47 @@ router.post('/', protect, [
             }, { timeout: 30000 });
             mlResults = response.data;
         } catch (mlError) {
-            console.error('ML API Error:', mlError.message);
-            mlResults = createMockPrediction(symptoms, duration, age, gender, comorbidities);
+            console.warn('⚠️ ML API Error, attempting LLM Fallback:', mlError.message);
+            try {
+                const systemPrompt = `You are a medical AI API. The user will provide a JSON object with:
+symptoms (array of strings), duration (days), age, gender, comorbidities.
+Return ONLY valid JSON matching this structure exactly (no markdown):
+{
+    "disease": { "name": "Predicted Disease Name", "confidence": 85.5 },
+    "severity": { "level": "Mild"|"Moderate"|"Severe", "confidence": 80.0 },
+    "riskTimeline": {
+        "timeline": [ { "day": number, "risk_score": number, "status": "Low/Moderate/High Risk" } ], // array of 7 days
+        "peak_risk_day": number,
+        "trend": "Stable"|"Increasing"|"Decreasing",
+        "recommendations": ["Actionable tip 1", "Actionable tip 2"]
+    },
+    "triage": {
+        "level": "HOME_CARE"|"VISIT_DOCTOR"|"EMERGENCY",
+        "title": "Short emoji title",
+        "message": "Short explanation",
+        "urgency_score": number, // 0-100
+        "color": "#10b981"|"#f59e0b"|"#ef4444",
+        "actions": ["Action 1", "Action 2"]
+    },
+    "explainability": {
+        "summary": "1 sentence",
+        "explanation": "2 sentences",
+        "chartData": {
+            "labels": ["symptom1", "symptom2"],
+            "values": [80, 50],
+            "colors": ["rgba(59, 130, 246, 1)", "rgba(59, 130, 246, 0.6)"]
+        }
+    }
+}`;
+                const userPrompt = JSON.stringify({ symptoms, duration, age, gender, comorbidities });
+                const rawLlmResponse = await llmFallback.analyze(systemPrompt, userPrompt);
+                const cleanJson = rawLlmResponse.replace(/```json|```/g, '').trim();
+                mlResults = JSON.parse(cleanJson);
+                console.log('✅ LLM Fallback successful!');
+            } catch (llmError) {
+                console.error('❌ LLM Fallback also failed:', llmError.message);
+                mlResults = createMockPrediction(symptoms, duration, age, gender, comorbidities);
+            }
         }
 
         // Check if demo user — store in-memory
@@ -64,8 +104,8 @@ router.post('/', protect, [
             };
             inMemoryPredictions.unshift(prediction);
         } else {
-            // Save to Supabase
-            const { data, error } = await supabase
+            // Save to NeonDB
+            const { data, error } = await db
                 .from('predictions')
                 .insert({
                     user_id: req.user.id,
@@ -131,12 +171,12 @@ router.get('/history', protect, async (req, res) => {
             total = userPreds.length;
             predictions = userPreds.slice(from, to + 1);
         } else {
-            const { data, error, count } = await supabase
+            const { data, error, count } = await db
                 .from('predictions')
                 .select('*', { count: 'exact' })
                 .eq('user_id', req.user.id)
                 .order('created_at', { ascending: false })
-                .range(from, to);
+                .limit(limit);
 
             if (error) throw error;
             predictions = (data || []).map(mapPrediction);
@@ -166,7 +206,7 @@ router.get('/:id', protect, async (req, res) => {
         if (isDemo || id.startsWith('pred_')) {
             prediction = inMemoryPredictions.find(p => (p._id === id || p.id === id) && p.user === req.user.id);
         } else {
-            const { data, error } = await supabase
+            const { data, error } = await db
                 .from('predictions')
                 .select('*')
                 .eq('id', id)
@@ -187,7 +227,7 @@ router.get('/:id', protect, async (req, res) => {
     }
 });
 
-// Map Supabase row to frontend-expected shape
+// Map NeonDB row to frontend-expected shape
 function mapPrediction(row) {
     return {
         _id: row.id,

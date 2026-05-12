@@ -1,0 +1,1001 @@
+disease,severity,symptom_1,symptom_2,symptom_3,symptom_4,symptom_5,symptom_6,age,gender,duration_days,comorbidity
+Gastroenteritis,Mild,vomiting,dehydration,nausea,abdominal pain,diarrhea,fever,79,Male,8,hypertension
+Migraine,Severe,visual disturbance,severe headache,nausea,light sensitivity,none,none,34,Female,2,asthma
+Bronchitis,Mild,mild fever,persistent cough,fatigue,none,none,none,53,Male,11,none
+COVID-19,Moderate,dry cough,shortness of breath,fatigue,loss of taste,fever,loss of smell,77,Male,2,none
+Influenza,Moderate,fatigue,severe cough,headache,chills,none,none,64,Male,12,asthma
+COVID-19,Moderate,shortness of breath,loss of taste,fatigue,dry cough,none,none,8,Female,13,none
+Strep Throat,Moderate,severe sore throat,fever,swollen lymph nodes,headache,difficulty swallowing,none,52,Male,8,none
+Urinary Tract Infection,Moderate,abdominal pain,burning sensation,frequent urination,fever,none,none,28,Female,9,none
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,fever,none,none,none,5,Female,8,diabetes
+COVID-19,Severe,dry cough,loss of smell,fatigue,none,none,none,45,Female,7,none
+Influenza,Moderate,fatigue,high fever,body ache,none,none,none,51,Female,3,none
+Strep Throat,Mild,difficulty swallowing,swollen lymph nodes,headache,severe sore throat,fever,none,81,Male,7,asthma
+Pneumonia,Severe,chest pain,severe cough,shortness of breath,high fever,none,none,33,Female,13,hypertension
+COVID-19,Moderate,loss of taste,shortness of breath,fever,fatigue,none,none,10,Female,12,heart disease
+Pneumonia,Severe,fatigue,severe cough,chest pain,shortness of breath,none,none,66,Male,1,hypertension
+Urinary Tract Infection,Mild,burning sensation,fever,abdominal pain,frequent urination,cloudy urine,none,31,Male,5,none
+Strep Throat,Moderate,headache,swollen lymph nodes,severe sore throat,difficulty swallowing,fever,none,62,Female,12,hypertension
+Influenza,Moderate,body ache,severe cough,fatigue,chills,headache,none,6,Female,6,diabetes
+Common Cold,Mild,mild fever,runny nose,sore throat,none,none,none,36,Female,7,none
+Migraine,Moderate,visual disturbance,nausea,light sensitivity,severe headache,none,none,74,Female,11,none
+Common Cold,Mild,runny nose,mild fever,sneezing,none,none,none,24,Female,11,heart disease
+Strep Throat,Severe,severe sore throat,difficulty swallowing,headache,swollen lymph nodes,fever,none,44,Female,7,none
+Common Cold,Moderate,mild cough,sneezing,mild fever,runny nose,sore throat,none,46,Male,7,none
+Strep Throat,Severe,fever,difficulty swallowing,headache,swollen lymph nodes,severe sore throat,none,16,Male,5,none
+Gastroenteritis,Severe,dehydration,vomiting,abdominal pain,none,none,none,37,Female,4,hypertension
+Migraine,Moderate,light sensitivity,severe headache,visual disturbance,nausea,none,none,29,Male,2,asthma
+Influenza,Mild,body ache,headache,high fever,fatigue,none,none,72,Male,5,diabetes
+Migraine,Moderate,nausea,severe headache,light sensitivity,visual disturbance,none,none,37,Female,12,none
+Allergies,Mild,sneezing,mild cough,runny nose,itchy eyes,congestion,none,25,Female,1,none
+Common Cold,Mild,mild fever,sneezing,mild cough,none,none,none,53,Female,1,none
+Bronchitis,Severe,mucus production,fatigue,persistent cough,chest discomfort,none,none,50,Male,3,none
+Pneumonia,Moderate,chest pain,shortness of breath,high fever,severe cough,fatigue,none,22,Male,10,none
+Strep Throat,Moderate,severe sore throat,headache,fever,swollen lymph nodes,difficulty swallowing,none,31,Female,2,none
+Migraine,Moderate,visual disturbance,nausea,light sensitivity,none,none,none,46,Male,10,none
+Urinary Tract Infection,Moderate,abdominal pain,frequent urination,burning sensation,fever,cloudy urine,none,49,Female,1,hypertension
+COVID-19,Mild,shortness of breath,fever,loss of taste,fatigue,dry cough,none,29,Female,13,none
+Strep Throat,Moderate,headache,fever,difficulty swallowing,swollen lymph nodes,none,none,64,Male,1,none
+Bronchitis,Moderate,mild fever,fatigue,persistent cough,mucus production,chest discomfort,none,51,Male,7,asthma
+Influenza,Moderate,chills,fatigue,headache,high fever,severe cough,body ache,59,Female,5,asthma
+Gastroenteritis,Severe,diarrhea,vomiting,fever,dehydration,abdominal pain,none,38,Female,6,none
+Migraine,Moderate,light sensitivity,nausea,visual disturbance,none,none,none,68,Male,5,heart disease
+Gastroenteritis,Mild,fever,nausea,diarrhea,dehydration,vomiting,none,33,Female,12,diabetes
+Common Cold,Mild,mild fever,mild cough,sneezing,runny nose,none,none,43,Female,1,none
+Bronchitis,Moderate,mild fever,persistent cough,chest discomfort,fatigue,mucus production,none,56,Male,10,none
+Strep Throat,Mild,difficulty swallowing,fever,headache,swollen lymph nodes,severe sore throat,none,28,Female,7,none
+Pneumonia,Moderate,severe cough,fatigue,high fever,chest pain,shortness of breath,none,65,Male,11,none
+COVID-19,Mild,fatigue,loss of smell,shortness of breath,none,none,none,50,Female,13,hypertension
+COVID-19,Moderate,loss of taste,fatigue,shortness of breath,loss of smell,dry cough,none,38,Male,9,none
+Strep Throat,Mild,headache,swollen lymph nodes,fever,none,none,none,25,Male,9,none
+Bronchitis,Mild,chest discomfort,mucus production,fatigue,none,none,none,28,Male,5,heart disease
+Gastroenteritis,Moderate,fever,abdominal pain,vomiting,none,none,none,17,Male,3,none
+Urinary Tract Infection,Severe,cloudy urine,burning sensation,abdominal pain,frequent urination,fever,none,56,Male,10,none
+Bronchitis,Moderate,fatigue,mucus production,persistent cough,none,none,none,57,Male,9,asthma
+Bronchitis,Mild,chest discomfort,persistent cough,fatigue,mild fever,none,none,39,Male,13,none
+Influenza,Severe,headache,severe cough,chills,body ache,high fever,none,11,Female,13,heart disease
+Urinary Tract Infection,Moderate,cloudy urine,frequent urination,fever,burning sensation,none,none,42,Male,8,none
+Common Cold,Severe,sneezing,mild fever,mild cough,runny nose,none,none,8,Female,6,none
+COVID-19,Mild,fatigue,fever,shortness of breath,none,none,none,71,Male,13,hypertension
+Strep Throat,Moderate,difficulty swallowing,fever,severe sore throat,headache,swollen lymph nodes,none,5,Male,13,heart disease
+Urinary Tract Infection,Moderate,abdominal pain,burning sensation,cloudy urine,frequent urination,fever,none,10,Female,12,none
+Bronchitis,Moderate,chest discomfort,mucus production,persistent cough,mild fever,fatigue,none,24,Male,2,asthma
+Common Cold,Mild,sore throat,mild cough,sneezing,mild fever,none,none,61,Male,12,none
+Migraine,Mild,light sensitivity,nausea,severe headache,visual disturbance,none,none,40,Female,8,none
+Influenza,Mild,chills,body ache,severe cough,high fever,headache,fatigue,77,Male,5,none
+COVID-19,Severe,fatigue,loss of smell,fever,none,none,none,14,Female,2,none
+Bronchitis,Severe,mild fever,chest discomfort,fatigue,mucus production,persistent cough,none,53,Male,5,none
+Urinary Tract Infection,Mild,burning sensation,fever,frequent urination,cloudy urine,none,none,5,Male,7,none
+Common Cold,Mild,sore throat,runny nose,mild cough,none,none,none,57,Male,10,none
+Common Cold,Mild,sore throat,mild cough,mild fever,none,none,none,8,Female,1,none
+Influenza,Severe,high fever,severe cough,fatigue,headache,chills,body ache,54,Female,1,none
+Bronchitis,Mild,fatigue,mucus production,chest discomfort,persistent cough,none,none,27,Male,5,none
+Influenza,Moderate,high fever,chills,headache,body ache,fatigue,none,34,Male,11,hypertension
+Influenza,Moderate,headache,body ache,severe cough,fatigue,chills,high fever,55,Male,5,none
+Strep Throat,Mild,fever,swollen lymph nodes,headache,difficulty swallowing,severe sore throat,none,73,Female,6,asthma
+COVID-19,Severe,loss of smell,fatigue,shortness of breath,dry cough,loss of taste,none,31,Male,2,none
+COVID-19,Mild,loss of taste,fever,loss of smell,dry cough,shortness of breath,none,74,Male,5,asthma
+Strep Throat,Moderate,swollen lymph nodes,fever,headache,severe sore throat,none,none,77,Female,9,asthma
+Allergies,Mild,runny nose,mild cough,sneezing,congestion,itchy eyes,none,5,Female,1,none
+Pneumonia,Moderate,severe cough,fatigue,high fever,shortness of breath,chest pain,none,30,Female,11,none
+Gastroenteritis,Moderate,abdominal pain,vomiting,nausea,fever,diarrhea,none,19,Female,9,none
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,fever,headache,severe sore throat,none,48,Male,1,none
+Urinary Tract Infection,Mild,cloudy urine,fever,frequent urination,abdominal pain,burning sensation,none,38,Male,8,none
+COVID-19,Moderate,shortness of breath,loss of taste,loss of smell,dry cough,none,none,60,Male,13,none
+Urinary Tract Infection,Mild,abdominal pain,fever,frequent urination,none,none,none,8,Female,11,hypertension
+Migraine,Moderate,nausea,visual disturbance,light sensitivity,severe headache,none,none,44,Male,4,none
+Allergies,Mild,sneezing,runny nose,itchy eyes,congestion,none,none,55,Female,9,none
+Migraine,Mild,visual disturbance,nausea,severe headache,light sensitivity,none,none,30,Female,4,none
+Common Cold,Mild,sneezing,mild fever,mild cough,sore throat,runny nose,none,68,Female,5,asthma
+Pneumonia,Moderate,shortness of breath,chest pain,severe cough,none,none,none,14,Male,7,none
+Influenza,Mild,chills,headache,severe cough,none,none,none,13,Male,8,none
+COVID-19,Severe,shortness of breath,loss of taste,loss of smell,dry cough,none,none,79,Male,2,diabetes
+COVID-19,Severe,loss of taste,dry cough,fever,none,none,none,18,Female,3,asthma
+Bronchitis,Mild,persistent cough,fatigue,chest discomfort,mucus production,mild fever,none,46,Male,2,none
+Gastroenteritis,Moderate,fever,abdominal pain,vomiting,nausea,diarrhea,dehydration,19,Male,9,none
+Gastroenteritis,Mild,vomiting,nausea,diarrhea,abdominal pain,none,none,10,Male,7,none
+Strep Throat,Moderate,difficulty swallowing,severe sore throat,headache,fever,swollen lymph nodes,none,31,Female,13,asthma
+Common Cold,Mild,sneezing,runny nose,sore throat,none,none,none,70,Female,5,none
+Common Cold,Mild,runny nose,sneezing,sore throat,mild cough,none,none,56,Female,13,none
+Pneumonia,Severe,shortness of breath,severe cough,high fever,chest pain,fatigue,none,40,Female,10,none
+Bronchitis,Moderate,persistent cough,fatigue,chest discomfort,mucus production,mild fever,none,76,Male,10,none
+Strep Throat,Moderate,headache,fever,swollen lymph nodes,none,none,none,47,Female,12,none
+Pneumonia,Severe,severe cough,chest pain,high fever,none,none,none,35,Female,9,none
+Migraine,Mild,visual disturbance,severe headache,light sensitivity,none,none,none,25,Female,4,asthma
+Urinary Tract Infection,Mild,burning sensation,frequent urination,cloudy urine,none,none,none,57,Male,10,none
+Bronchitis,Moderate,fatigue,mucus production,chest discomfort,mild fever,none,none,79,Female,2,asthma
+Influenza,Moderate,body ache,chills,fatigue,headache,severe cough,none,29,Male,4,none
+Migraine,Mild,nausea,light sensitivity,visual disturbance,none,none,none,30,Female,2,none
+Gastroenteritis,Mild,dehydration,diarrhea,vomiting,none,none,none,65,Female,1,hypertension
+Gastroenteritis,Moderate,fever,nausea,abdominal pain,vomiting,dehydration,none,34,Female,8,none
+Common Cold,Mild,runny nose,sore throat,sneezing,mild fever,none,none,42,Male,4,asthma
+Gastroenteritis,Moderate,nausea,abdominal pain,dehydration,fever,vomiting,none,59,Female,2,none
+Migraine,Mild,nausea,visual disturbance,light sensitivity,none,none,none,63,Male,13,asthma
+Urinary Tract Infection,Moderate,burning sensation,frequent urination,fever,abdominal pain,cloudy urine,none,12,Female,3,heart disease
+Migraine,Mild,visual disturbance,nausea,severe headache,light sensitivity,none,none,59,Female,2,diabetes
+Gastroenteritis,Moderate,vomiting,dehydration,nausea,none,none,none,64,Female,2,none
+Bronchitis,Mild,persistent cough,chest discomfort,fatigue,mucus production,mild fever,none,16,Female,5,none
+Urinary Tract Infection,Severe,frequent urination,burning sensation,abdominal pain,fever,none,none,28,Male,10,none
+Gastroenteritis,Moderate,abdominal pain,fever,dehydration,diarrhea,vomiting,nausea,70,Male,9,hypertension
+Allergies,Moderate,sneezing,congestion,mild cough,runny nose,none,none,41,Male,6,none
+Bronchitis,Moderate,fatigue,mild fever,mucus production,persistent cough,none,none,29,Female,10,none
+Bronchitis,Moderate,mucus production,chest discomfort,persistent cough,mild fever,none,none,44,Female,12,none
+Bronchitis,Mild,mild fever,fatigue,chest discomfort,persistent cough,mucus production,none,66,Female,2,diabetes
+Common Cold,Mild,runny nose,sneezing,mild cough,sore throat,mild fever,none,15,Female,11,none
+Common Cold,Mild,mild fever,runny nose,sore throat,sneezing,mild cough,none,26,Male,8,heart disease
+Pneumonia,Mild,severe cough,chest pain,fatigue,high fever,shortness of breath,none,66,Male,13,diabetes
+Urinary Tract Infection,Mild,cloudy urine,abdominal pain,fever,frequent urination,none,none,5,Male,13,none
+Strep Throat,Mild,swollen lymph nodes,severe sore throat,difficulty swallowing,none,none,none,55,Female,6,none
+COVID-19,Moderate,dry cough,shortness of breath,fever,none,none,none,61,Male,1,diabetes
+Migraine,Moderate,nausea,severe headache,light sensitivity,visual disturbance,none,none,84,Female,8,hypertension
+Urinary Tract Infection,Moderate,fever,cloudy urine,frequent urination,burning sensation,abdominal pain,none,36,Female,7,none
+Strep Throat,Moderate,swollen lymph nodes,severe sore throat,headache,none,none,none,13,Male,8,none
+Gastroenteritis,Moderate,nausea,dehydration,fever,none,none,none,21,Female,8,heart disease
+Influenza,Moderate,chills,high fever,body ache,fatigue,severe cough,none,43,Male,8,none
+Allergies,Mild,itchy eyes,mild cough,sneezing,none,none,none,70,Male,3,none
+Gastroenteritis,Severe,dehydration,nausea,diarrhea,none,none,none,33,Female,1,none
+Bronchitis,Moderate,mucus production,fatigue,mild fever,chest discomfort,persistent cough,none,29,Male,7,none
+Common Cold,Mild,sore throat,sneezing,mild fever,mild cough,none,none,72,Female,5,diabetes
+Common Cold,Mild,sneezing,sore throat,mild fever,none,none,none,16,Male,10,none
+Bronchitis,Moderate,persistent cough,fatigue,mild fever,mucus production,chest discomfort,none,15,Female,13,none
+Gastroenteritis,Mild,vomiting,fever,nausea,dehydration,diarrhea,abdominal pain,78,Male,2,hypertension
+Urinary Tract Infection,Mild,fever,frequent urination,cloudy urine,none,none,none,51,Male,1,none
+Pneumonia,Severe,shortness of breath,chest pain,high fever,fatigue,none,none,66,Male,8,none
+COVID-19,Severe,dry cough,loss of smell,fever,loss of taste,none,none,15,Male,8,none
+Urinary Tract Infection,Mild,abdominal pain,cloudy urine,fever,burning sensation,frequent urination,none,29,Male,11,hypertension
+Migraine,Moderate,severe headache,visual disturbance,nausea,light sensitivity,none,none,52,Female,2,hypertension
+Bronchitis,Moderate,mild fever,chest discomfort,fatigue,none,none,none,62,Male,8,heart disease
+Migraine,Severe,nausea,light sensitivity,visual disturbance,severe headache,none,none,23,Female,8,heart disease
+Urinary Tract Infection,Moderate,burning sensation,cloudy urine,fever,none,none,none,67,Male,6,diabetes
+Bronchitis,Moderate,chest discomfort,mild fever,persistent cough,mucus production,fatigue,none,46,Female,11,heart disease
+Gastroenteritis,Moderate,diarrhea,nausea,fever,dehydration,abdominal pain,none,43,Female,13,none
+Common Cold,Mild,mild fever,sneezing,mild cough,none,none,none,39,Female,6,none
+Gastroenteritis,Moderate,dehydration,fever,abdominal pain,diarrhea,none,none,26,Female,4,none
+Influenza,Moderate,chills,headache,body ache,fatigue,high fever,severe cough,69,Female,10,diabetes
+Influenza,Moderate,body ache,high fever,severe cough,fatigue,none,none,80,Male,13,diabetes
+Allergies,Mild,mild cough,sneezing,runny nose,congestion,itchy eyes,none,50,Female,13,none
+COVID-19,Severe,loss of smell,dry cough,loss of taste,none,none,none,51,Female,4,none
+COVID-19,Severe,dry cough,loss of taste,fever,none,none,none,63,Female,6,none
+Bronchitis,Moderate,chest discomfort,fatigue,mucus production,persistent cough,mild fever,none,38,Male,3,diabetes
+Urinary Tract Infection,Mild,frequent urination,cloudy urine,abdominal pain,burning sensation,fever,none,76,Female,9,none
+Bronchitis,Mild,persistent cough,fatigue,chest discomfort,mucus production,mild fever,none,68,Female,5,none
+Strep Throat,Mild,headache,severe sore throat,fever,difficulty swallowing,swollen lymph nodes,none,75,Male,12,hypertension
+Urinary Tract Infection,Moderate,cloudy urine,burning sensation,abdominal pain,fever,none,none,6,Female,8,none
+Common Cold,Mild,runny nose,mild cough,sore throat,sneezing,mild fever,none,42,Female,11,none
+Common Cold,Moderate,mild fever,sneezing,mild cough,sore throat,runny nose,none,45,Male,12,none
+Allergies,Mild,itchy eyes,runny nose,sneezing,congestion,none,none,6,Male,1,none
+Common Cold,Mild,mild cough,runny nose,mild fever,none,none,none,50,Female,2,none
+Strep Throat,Moderate,difficulty swallowing,headache,fever,severe sore throat,swollen lymph nodes,none,10,Male,6,none
+Urinary Tract Infection,Moderate,frequent urination,abdominal pain,burning sensation,cloudy urine,none,none,66,Male,11,asthma
+Pneumonia,Moderate,severe cough,high fever,fatigue,chest pain,shortness of breath,none,7,Male,9,asthma
+Influenza,Moderate,body ache,severe cough,headache,high fever,none,none,23,Male,4,none
+Gastroenteritis,Moderate,nausea,dehydration,fever,none,none,none,41,Female,8,none
+COVID-19,Moderate,shortness of breath,loss of smell,fever,fatigue,loss of taste,dry cough,83,Male,7,asthma
+Bronchitis,Moderate,mild fever,fatigue,chest discomfort,persistent cough,mucus production,none,24,Female,8,none
+COVID-19,Moderate,loss of taste,fatigue,shortness of breath,dry cough,loss of smell,fever,70,Male,2,none
+Gastroenteritis,Mild,fever,nausea,abdominal pain,vomiting,none,none,22,Female,5,none
+COVID-19,Moderate,fever,loss of taste,fatigue,shortness of breath,none,none,41,Male,6,none
+Allergies,Mild,sneezing,mild cough,runny nose,itchy eyes,congestion,none,6,Male,6,none
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,abdominal pain,none,none,none,69,Female,12,diabetes
+Gastroenteritis,Mild,nausea,abdominal pain,fever,dehydration,vomiting,none,14,Female,9,none
+Pneumonia,Moderate,chest pain,fatigue,severe cough,shortness of breath,high fever,none,32,Male,11,none
+Bronchitis,Moderate,mild fever,mucus production,chest discomfort,persistent cough,fatigue,none,32,Male,6,heart disease
+Pneumonia,Severe,fatigue,shortness of breath,high fever,severe cough,none,none,33,Male,7,heart disease
+Bronchitis,Moderate,mucus production,fatigue,chest discomfort,none,none,none,16,Female,4,none
+Migraine,Moderate,severe headache,visual disturbance,nausea,light sensitivity,none,none,33,Male,7,none
+Influenza,Mild,headache,high fever,body ache,severe cough,chills,none,54,Female,12,none
+Influenza,Severe,severe cough,chills,body ache,none,none,none,51,Female,1,none
+Strep Throat,Moderate,severe sore throat,fever,swollen lymph nodes,headache,difficulty swallowing,none,12,Male,8,none
+Migraine,Mild,visual disturbance,light sensitivity,severe headache,none,none,none,84,Female,5,heart disease
+Urinary Tract Infection,Mild,frequent urination,abdominal pain,cloudy urine,burning sensation,none,none,77,Male,9,none
+Urinary Tract Infection,Severe,burning sensation,fever,frequent urination,none,none,none,8,Female,3,none
+Influenza,Mild,body ache,fatigue,headache,none,none,none,58,Male,9,none
+Common Cold,Mild,mild fever,runny nose,sore throat,mild cough,sneezing,none,37,Male,1,none
+Allergies,Mild,sneezing,mild cough,runny nose,congestion,none,none,50,Male,3,none
+Migraine,Mild,severe headache,light sensitivity,visual disturbance,nausea,none,none,30,Male,12,asthma
+Bronchitis,Moderate,mucus production,persistent cough,mild fever,fatigue,chest discomfort,none,74,Female,2,heart disease
+Bronchitis,Moderate,mucus production,persistent cough,chest discomfort,fatigue,mild fever,none,29,Female,11,none
+Pneumonia,Moderate,severe cough,shortness of breath,high fever,none,none,none,72,Female,5,hypertension
+COVID-19,Mild,fever,loss of taste,fatigue,shortness of breath,loss of smell,dry cough,8,Female,9,none
+Gastroenteritis,Moderate,fever,dehydration,nausea,diarrhea,vomiting,none,60,Male,10,asthma
+Migraine,Severe,light sensitivity,severe headache,nausea,visual disturbance,none,none,48,Female,13,none
+Gastroenteritis,Mild,diarrhea,abdominal pain,nausea,vomiting,none,none,14,Female,10,none
+Strep Throat,Moderate,swollen lymph nodes,headache,fever,difficulty swallowing,severe sore throat,none,28,Male,4,none
+Strep Throat,Moderate,swollen lymph nodes,severe sore throat,headache,none,none,none,73,Male,1,heart disease
+Influenza,Moderate,fatigue,severe cough,chills,none,none,none,75,Female,11,hypertension
+Urinary Tract Infection,Moderate,fever,cloudy urine,abdominal pain,burning sensation,none,none,71,Female,6,hypertension
+Urinary Tract Infection,Moderate,fever,frequent urination,burning sensation,none,none,none,46,Female,7,none
+Pneumonia,Moderate,chest pain,shortness of breath,high fever,severe cough,fatigue,none,74,Male,7,diabetes
+Common Cold,Mild,mild cough,mild fever,runny nose,sore throat,sneezing,none,25,Female,6,none
+COVID-19,Moderate,fever,shortness of breath,loss of taste,dry cough,none,none,48,Female,6,none
+Influenza,Mild,high fever,severe cough,body ache,headache,fatigue,none,73,Male,13,heart disease
+Urinary Tract Infection,Moderate,abdominal pain,frequent urination,fever,cloudy urine,burning sensation,none,16,Male,12,none
+COVID-19,Mild,fever,dry cough,loss of smell,loss of taste,fatigue,shortness of breath,69,Male,5,diabetes
+Allergies,Mild,mild cough,itchy eyes,runny nose,congestion,none,none,18,Female,1,heart disease
+Influenza,Moderate,chills,fatigue,high fever,none,none,none,71,Female,7,none
+Influenza,Severe,fatigue,high fever,headache,body ache,severe cough,none,16,Male,1,asthma
+Influenza,Mild,high fever,chills,fatigue,none,none,none,11,Female,9,none
+COVID-19,Severe,fever,loss of smell,fatigue,shortness of breath,none,none,14,Male,2,asthma
+Allergies,Mild,congestion,sneezing,runny nose,none,none,none,58,Female,13,none
+COVID-19,Mild,loss of taste,dry cough,loss of smell,none,none,none,72,Male,4,diabetes
+Pneumonia,Mild,severe cough,chest pain,high fever,shortness of breath,none,none,47,Female,2,none
+COVID-19,Mild,fever,loss of smell,dry cough,shortness of breath,fatigue,none,15,Female,13,none
+Urinary Tract Infection,Mild,burning sensation,fever,cloudy urine,frequent urination,abdominal pain,none,66,Female,3,diabetes
+Common Cold,Mild,sneezing,mild fever,runny nose,mild cough,sore throat,none,56,Male,4,none
+Allergies,Mild,mild cough,congestion,sneezing,itchy eyes,runny nose,none,11,Male,12,none
+Gastroenteritis,Mild,nausea,abdominal pain,diarrhea,none,none,none,25,Female,6,none
+Strep Throat,Mild,headache,severe sore throat,fever,swollen lymph nodes,difficulty swallowing,none,57,Female,5,none
+Pneumonia,Moderate,chest pain,shortness of breath,fatigue,none,none,none,59,Male,10,asthma
+Influenza,Moderate,headache,high fever,severe cough,chills,body ache,fatigue,33,Female,10,none
+Common Cold,Mild,sneezing,mild cough,mild fever,none,none,none,64,Female,13,hypertension
+Influenza,Moderate,body ache,high fever,severe cough,chills,none,none,63,Female,8,hypertension
+Common Cold,Severe,sore throat,sneezing,runny nose,mild cough,mild fever,none,12,Male,8,hypertension
+Common Cold,Mild,runny nose,sneezing,mild fever,none,none,none,24,Male,8,none
+Pneumonia,Severe,chest pain,severe cough,fatigue,high fever,shortness of breath,none,55,Male,10,hypertension
+Allergies,Mild,sneezing,mild cough,itchy eyes,congestion,runny nose,none,12,Female,8,none
+Influenza,Moderate,fatigue,headache,chills,high fever,severe cough,none,45,Male,10,none
+Influenza,Mild,high fever,body ache,severe cough,chills,none,none,17,Male,12,asthma
+Strep Throat,Mild,fever,headache,difficulty swallowing,swollen lymph nodes,severe sore throat,none,63,Female,12,hypertension
+Influenza,Mild,headache,body ache,severe cough,high fever,none,none,25,Male,10,none
+Gastroenteritis,Moderate,fever,vomiting,diarrhea,dehydration,abdominal pain,none,25,Female,8,none
+Gastroenteritis,Severe,nausea,fever,vomiting,dehydration,diarrhea,none,26,Female,13,none
+Influenza,Moderate,chills,high fever,body ache,none,none,none,27,Female,12,none
+Bronchitis,Mild,mucus production,fatigue,mild fever,none,none,none,27,Male,7,none
+Urinary Tract Infection,Mild,frequent urination,fever,burning sensation,abdominal pain,cloudy urine,none,5,Female,5,none
+Pneumonia,Moderate,severe cough,fatigue,chest pain,shortness of breath,high fever,none,14,Male,7,none
+Influenza,Moderate,chills,severe cough,body ache,none,none,none,58,Female,1,diabetes
+Urinary Tract Infection,Mild,fever,burning sensation,abdominal pain,frequent urination,none,none,74,Female,3,none
+Pneumonia,Moderate,severe cough,high fever,chest pain,shortness of breath,fatigue,none,30,Male,6,none
+Migraine,Mild,visual disturbance,light sensitivity,nausea,severe headache,none,none,64,Male,13,diabetes
+Gastroenteritis,Mild,nausea,dehydration,diarrhea,vomiting,fever,none,62,Male,4,asthma
+Migraine,Mild,light sensitivity,severe headache,visual disturbance,nausea,none,none,64,Male,1,heart disease
+COVID-19,Mild,fever,loss of taste,shortness of breath,dry cough,none,none,68,Male,13,diabetes
+Gastroenteritis,Severe,fever,abdominal pain,dehydration,none,none,none,51,Male,9,none
+Common Cold,Mild,sneezing,runny nose,mild cough,none,none,none,51,Female,12,none
+Urinary Tract Infection,Mild,abdominal pain,burning sensation,fever,frequent urination,none,none,81,Male,1,asthma
+Allergies,Moderate,runny nose,mild cough,congestion,none,none,none,46,Male,10,none
+Bronchitis,Mild,chest discomfort,mild fever,mucus production,fatigue,persistent cough,none,74,Female,4,diabetes
+Gastroenteritis,Moderate,dehydration,vomiting,fever,abdominal pain,none,none,58,Female,12,asthma
+Urinary Tract Infection,Mild,abdominal pain,burning sensation,frequent urination,cloudy urine,fever,none,28,Female,10,none
+Gastroenteritis,Moderate,diarrhea,nausea,fever,dehydration,vomiting,none,81,Female,12,diabetes
+Pneumonia,Severe,severe cough,fatigue,chest pain,shortness of breath,high fever,none,25,Female,2,none
+Gastroenteritis,Severe,nausea,dehydration,fever,abdominal pain,none,none,46,Female,12,none
+Urinary Tract Infection,Moderate,abdominal pain,fever,cloudy urine,none,none,none,41,Female,1,none
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,cloudy urine,none,none,none,72,Male,10,diabetes
+Allergies,Moderate,runny nose,itchy eyes,mild cough,congestion,sneezing,none,62,Male,9,none
+Common Cold,Moderate,runny nose,mild cough,sore throat,none,none,none,78,Male,5,none
+Urinary Tract Infection,Moderate,fever,frequent urination,abdominal pain,cloudy urine,none,none,80,Female,8,diabetes
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,severe sore throat,headache,fever,none,25,Female,10,none
+Pneumonia,Severe,severe cough,shortness of breath,chest pain,high fever,none,none,31,Male,9,none
+Strep Throat,Severe,fever,swollen lymph nodes,headache,none,none,none,46,Female,3,asthma
+Pneumonia,Severe,shortness of breath,fatigue,chest pain,high fever,severe cough,none,55,Male,8,asthma
+Migraine,Mild,light sensitivity,nausea,severe headache,visual disturbance,none,none,76,Male,9,hypertension
+Migraine,Mild,severe headache,light sensitivity,visual disturbance,nausea,none,none,84,Male,13,none
+Influenza,Mild,body ache,severe cough,headache,fatigue,high fever,none,36,Female,11,none
+Allergies,Mild,congestion,runny nose,sneezing,mild cough,none,none,20,Male,13,none
+Bronchitis,Mild,persistent cough,mild fever,chest discomfort,mucus production,none,none,31,Male,9,hypertension
+Pneumonia,Moderate,severe cough,high fever,fatigue,none,none,none,65,Female,13,hypertension
+Allergies,Moderate,runny nose,congestion,sneezing,mild cough,none,none,77,Male,8,asthma
+COVID-19,Severe,loss of taste,fatigue,fever,shortness of breath,dry cough,loss of smell,66,Male,5,hypertension
+Influenza,Moderate,fatigue,high fever,chills,none,none,none,26,Male,5,none
+COVID-19,Mild,fever,loss of taste,dry cough,none,none,none,32,Male,7,asthma
+Pneumonia,Mild,chest pain,fatigue,high fever,shortness of breath,severe cough,none,71,Female,10,asthma
+Allergies,Mild,runny nose,mild cough,sneezing,itchy eyes,congestion,none,18,Female,12,heart disease
+Urinary Tract Infection,Moderate,cloudy urine,burning sensation,abdominal pain,frequent urination,fever,none,10,Male,11,none
+Influenza,Moderate,severe cough,headache,body ache,high fever,fatigue,chills,82,Male,4,diabetes
+Migraine,Mild,severe headache,light sensitivity,visual disturbance,nausea,none,none,52,Male,3,none
+COVID-19,Moderate,dry cough,shortness of breath,fatigue,loss of smell,none,none,77,Male,12,none
+COVID-19,Mild,loss of taste,dry cough,shortness of breath,fever,fatigue,none,37,Female,4,none
+Bronchitis,Moderate,fatigue,chest discomfort,mucus production,mild fever,persistent cough,none,72,Female,8,none
+Allergies,Mild,itchy eyes,mild cough,sneezing,none,none,none,39,Male,2,none
+Bronchitis,Mild,fatigue,mucus production,mild fever,none,none,none,77,Male,9,heart disease
+Common Cold,Mild,sneezing,mild cough,mild fever,sore throat,none,none,80,Female,12,asthma
+Urinary Tract Infection,Moderate,abdominal pain,cloudy urine,frequent urination,fever,burning sensation,none,55,Female,4,none
+COVID-19,Moderate,fever,loss of taste,dry cough,fatigue,shortness of breath,loss of smell,70,Female,2,asthma
+Urinary Tract Infection,Mild,fever,abdominal pain,cloudy urine,none,none,none,31,Female,3,none
+Common Cold,Mild,sneezing,mild cough,sore throat,none,none,none,39,Female,13,none
+Common Cold,Mild,mild cough,sore throat,runny nose,none,none,none,12,Male,4,asthma
+Strep Throat,Moderate,fever,difficulty swallowing,swollen lymph nodes,severe sore throat,headache,none,58,Female,9,none
+Bronchitis,Moderate,mucus production,mild fever,chest discomfort,none,none,none,59,Male,7,none
+COVID-19,Severe,loss of smell,dry cough,loss of taste,fever,shortness of breath,none,65,Male,13,heart disease
+Common Cold,Mild,sore throat,runny nose,mild fever,none,none,none,50,Male,13,none
+Common Cold,Mild,runny nose,mild cough,mild fever,sneezing,sore throat,none,37,Male,4,none
+COVID-19,Mild,loss of taste,dry cough,fatigue,fever,shortness of breath,none,19,Male,7,none
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,fever,abdominal pain,none,none,55,Female,9,none
+COVID-19,Mild,fatigue,loss of smell,dry cough,fever,loss of taste,shortness of breath,20,Female,8,none
+Urinary Tract Infection,Mild,burning sensation,frequent urination,cloudy urine,abdominal pain,none,none,83,Female,5,diabetes
+Common Cold,Moderate,sore throat,sneezing,mild fever,mild cough,runny nose,none,58,Male,2,none
+Gastroenteritis,Severe,nausea,diarrhea,abdominal pain,none,none,none,32,Female,9,none
+Migraine,Moderate,light sensitivity,severe headache,nausea,visual disturbance,none,none,37,Female,7,none
+Bronchitis,Severe,mucus production,mild fever,fatigue,persistent cough,chest discomfort,none,23,Male,10,none
+COVID-19,Severe,fatigue,dry cough,loss of smell,fever,shortness of breath,none,12,Female,4,none
+Allergies,Mild,itchy eyes,runny nose,congestion,none,none,none,63,Male,11,diabetes
+Strep Throat,Moderate,severe sore throat,difficulty swallowing,headache,swollen lymph nodes,fever,none,10,Male,13,none
+Strep Throat,Moderate,fever,headache,swollen lymph nodes,none,none,none,39,Male,6,none
+Urinary Tract Infection,Mild,burning sensation,fever,abdominal pain,none,none,none,21,Male,6,none
+Bronchitis,Moderate,mild fever,chest discomfort,mucus production,none,none,none,55,Male,10,none
+COVID-19,Mild,shortness of breath,loss of smell,loss of taste,dry cough,none,none,15,Male,4,none
+Migraine,Severe,nausea,visual disturbance,severe headache,none,none,none,55,Male,1,none
+Influenza,Moderate,severe cough,headache,body ache,fatigue,high fever,chills,12,Female,5,none
+Pneumonia,Severe,chest pain,severe cough,shortness of breath,fatigue,none,none,58,Male,12,diabetes
+Allergies,Mild,itchy eyes,runny nose,congestion,sneezing,mild cough,none,50,Female,12,none
+COVID-19,Mild,loss of taste,fever,shortness of breath,fatigue,loss of smell,none,79,Male,8,hypertension
+Urinary Tract Infection,Severe,cloudy urine,fever,abdominal pain,frequent urination,burning sensation,none,55,Male,4,none
+COVID-19,Severe,dry cough,loss of taste,fatigue,shortness of breath,loss of smell,fever,76,Male,6,hypertension
+Bronchitis,Moderate,persistent cough,mucus production,chest discomfort,none,none,none,26,Male,6,none
+Allergies,Mild,itchy eyes,sneezing,congestion,mild cough,none,none,70,Male,8,heart disease
+Urinary Tract Infection,Severe,frequent urination,fever,burning sensation,cloudy urine,none,none,75,Female,7,diabetes
+Pneumonia,Mild,chest pain,shortness of breath,high fever,none,none,none,12,Male,12,none
+Common Cold,Mild,runny nose,sore throat,mild fever,sneezing,mild cough,none,38,Female,4,none
+Allergies,Moderate,sneezing,runny nose,congestion,mild cough,itchy eyes,none,49,Female,2,diabetes
+COVID-19,Severe,fatigue,loss of taste,fever,loss of smell,dry cough,none,20,Female,12,asthma
+Strep Throat,Severe,headache,severe sore throat,fever,none,none,none,82,Female,7,none
+Gastroenteritis,Mild,diarrhea,abdominal pain,vomiting,none,none,none,23,Male,3,none
+Allergies,Mild,congestion,runny nose,mild cough,itchy eyes,sneezing,none,14,Female,8,none
+Pneumonia,Moderate,severe cough,high fever,shortness of breath,fatigue,chest pain,none,57,Female,6,none
+Pneumonia,Moderate,severe cough,shortness of breath,chest pain,none,none,none,82,Female,2,none
+Urinary Tract Infection,Mild,burning sensation,fever,cloudy urine,abdominal pain,frequent urination,none,30,Female,6,none
+Gastroenteritis,Moderate,diarrhea,abdominal pain,fever,dehydration,nausea,vomiting,33,Female,11,none
+COVID-19,Severe,shortness of breath,fever,fatigue,none,none,none,53,Female,8,none
+Bronchitis,Mild,chest discomfort,persistent cough,fatigue,none,none,none,59,Female,7,none
+Bronchitis,Moderate,fatigue,mucus production,persistent cough,none,none,none,77,Male,4,none
+Bronchitis,Mild,chest discomfort,mild fever,mucus production,fatigue,none,none,45,Male,2,none
+COVID-19,Moderate,dry cough,fatigue,shortness of breath,loss of taste,loss of smell,fever,17,Female,2,heart disease
+Urinary Tract Infection,Moderate,cloudy urine,frequent urination,fever,burning sensation,none,none,49,Male,2,none
+Migraine,Moderate,light sensitivity,severe headache,nausea,visual disturbance,none,none,48,Male,12,none
+Allergies,Mild,runny nose,congestion,itchy eyes,none,none,none,53,Female,6,none
+Bronchitis,Moderate,chest discomfort,mild fever,mucus production,persistent cough,none,none,18,Female,3,none
+Allergies,Moderate,congestion,itchy eyes,sneezing,none,none,none,64,Female,6,none
+Gastroenteritis,Mild,dehydration,fever,diarrhea,vomiting,abdominal pain,nausea,63,Male,9,diabetes
+Allergies,Mild,runny nose,itchy eyes,mild cough,sneezing,congestion,none,61,Female,12,diabetes
+Bronchitis,Mild,mucus production,persistent cough,chest discomfort,mild fever,fatigue,none,79,Female,1,heart disease
+Migraine,Moderate,light sensitivity,visual disturbance,nausea,severe headache,none,none,71,Male,9,none
+Influenza,Severe,high fever,chills,body ache,severe cough,fatigue,headache,13,Male,5,none
+Pneumonia,Moderate,shortness of breath,severe cough,chest pain,fatigue,none,none,75,Female,9,heart disease
+Strep Throat,Severe,difficulty swallowing,severe sore throat,swollen lymph nodes,fever,headache,none,72,Male,12,heart disease
+Common Cold,Mild,runny nose,mild cough,mild fever,none,none,none,35,Male,2,none
+Influenza,Mild,headache,body ache,severe cough,none,none,none,54,Female,11,none
+Strep Throat,Severe,severe sore throat,fever,swollen lymph nodes,none,none,none,82,Female,13,asthma
+COVID-19,Moderate,dry cough,loss of taste,fever,loss of smell,none,none,79,Male,2,none
+Allergies,Mild,sneezing,runny nose,congestion,none,none,none,80,Male,5,hypertension
+COVID-19,Severe,fever,loss of taste,loss of smell,fatigue,dry cough,none,33,Male,13,none
+Bronchitis,Mild,persistent cough,chest discomfort,mild fever,fatigue,mucus production,none,12,Female,4,heart disease
+Common Cold,Moderate,mild fever,sore throat,sneezing,mild cough,runny nose,none,48,Male,5,diabetes
+Bronchitis,Mild,fatigue,persistent cough,mild fever,mucus production,chest discomfort,none,46,Female,8,none
+Migraine,Mild,visual disturbance,severe headache,nausea,light sensitivity,none,none,71,Female,13,diabetes
+Pneumonia,Mild,shortness of breath,severe cough,fatigue,none,none,none,75,Male,3,hypertension
+Bronchitis,Moderate,mucus production,chest discomfort,persistent cough,fatigue,none,none,82,Male,2,none
+Pneumonia,Severe,fatigue,shortness of breath,severe cough,none,none,none,30,Male,4,asthma
+Strep Throat,Mild,difficulty swallowing,headache,swollen lymph nodes,severe sore throat,fever,none,21,Female,2,none
+Urinary Tract Infection,Moderate,cloudy urine,burning sensation,abdominal pain,none,none,none,80,Female,3,hypertension
+Gastroenteritis,Severe,abdominal pain,diarrhea,dehydration,nausea,fever,none,19,Female,4,heart disease
+Migraine,Severe,severe headache,nausea,light sensitivity,none,none,none,32,Female,9,none
+Strep Throat,Mild,difficulty swallowing,headache,swollen lymph nodes,severe sore throat,fever,none,31,Female,13,none
+Migraine,Severe,severe headache,visual disturbance,light sensitivity,nausea,none,none,57,Female,4,none
+Bronchitis,Moderate,chest discomfort,mild fever,persistent cough,mucus production,fatigue,none,64,Female,6,diabetes
+Strep Throat,Mild,swollen lymph nodes,difficulty swallowing,fever,severe sore throat,headache,none,51,Female,12,none
+COVID-19,Moderate,dry cough,loss of taste,shortness of breath,fatigue,fever,none,34,Female,5,none
+COVID-19,Severe,shortness of breath,loss of smell,dry cough,fatigue,none,none,26,Male,6,none
+Common Cold,Moderate,runny nose,sneezing,sore throat,mild fever,mild cough,none,63,Female,9,hypertension
+Strep Throat,Mild,difficulty swallowing,swollen lymph nodes,fever,headache,none,none,69,Male,9,diabetes
+Common Cold,Mild,runny nose,mild fever,mild cough,none,none,none,74,Male,7,diabetes
+Urinary Tract Infection,Mild,cloudy urine,fever,frequent urination,none,none,none,74,Female,4,none
+COVID-19,Severe,dry cough,shortness of breath,loss of taste,none,none,none,69,Male,3,asthma
+Pneumonia,Severe,fatigue,high fever,severe cough,chest pain,shortness of breath,none,39,Female,10,none
+Influenza,Moderate,chills,body ache,headache,none,none,none,53,Female,3,none
+Bronchitis,Severe,mild fever,persistent cough,mucus production,chest discomfort,fatigue,none,84,Male,11,none
+Pneumonia,Severe,severe cough,chest pain,high fever,fatigue,shortness of breath,none,61,Male,8,hypertension
+Migraine,Severe,severe headache,visual disturbance,nausea,light sensitivity,none,none,55,Female,4,none
+Common Cold,Mild,mild fever,mild cough,runny nose,none,none,none,16,Male,6,none
+Urinary Tract Infection,Mild,fever,frequent urination,abdominal pain,burning sensation,cloudy urine,none,23,Female,5,hypertension
+Gastroenteritis,Moderate,diarrhea,dehydration,vomiting,abdominal pain,fever,nausea,18,Male,3,none
+Migraine,Moderate,light sensitivity,visual disturbance,nausea,severe headache,none,none,61,Female,10,asthma
+Strep Throat,Severe,fever,severe sore throat,swollen lymph nodes,none,none,none,45,Male,2,none
+Urinary Tract Infection,Moderate,burning sensation,fever,cloudy urine,none,none,none,39,Female,2,none
+Strep Throat,Mild,headache,severe sore throat,swollen lymph nodes,fever,none,none,24,Male,9,hypertension
+COVID-19,Moderate,shortness of breath,loss of smell,fever,fatigue,dry cough,loss of taste,10,Male,11,none
+Common Cold,Mild,mild fever,sneezing,sore throat,mild cough,runny nose,none,72,Male,3,diabetes
+Strep Throat,Mild,severe sore throat,swollen lymph nodes,headache,none,none,none,26,Female,2,none
+Common Cold,Mild,sneezing,runny nose,mild cough,none,none,none,5,Female,4,none
+Strep Throat,Moderate,fever,headache,swollen lymph nodes,difficulty swallowing,severe sore throat,none,39,Female,11,hypertension
+Urinary Tract Infection,Mild,burning sensation,cloudy urine,abdominal pain,frequent urination,fever,none,23,Female,12,none
+Urinary Tract Infection,Moderate,abdominal pain,fever,frequent urination,none,none,none,27,Male,4,diabetes
+Common Cold,Mild,runny nose,sore throat,sneezing,none,none,none,54,Male,10,none
+Influenza,Moderate,fatigue,high fever,severe cough,headache,none,none,67,Male,8,hypertension
+Strep Throat,Mild,headache,difficulty swallowing,swollen lymph nodes,fever,none,none,77,Male,6,none
+Gastroenteritis,Moderate,diarrhea,fever,vomiting,none,none,none,60,Male,5,none
+Strep Throat,Moderate,severe sore throat,headache,difficulty swallowing,swollen lymph nodes,fever,none,41,Male,12,none
+Allergies,Mild,mild cough,congestion,sneezing,runny nose,itchy eyes,none,11,Male,11,none
+Pneumonia,Mild,fatigue,chest pain,shortness of breath,high fever,severe cough,none,5,Female,6,asthma
+Bronchitis,Moderate,mild fever,fatigue,persistent cough,none,none,none,51,Female,3,asthma
+Bronchitis,Moderate,persistent cough,mucus production,mild fever,none,none,none,29,Male,13,none
+Pneumonia,Severe,shortness of breath,chest pain,high fever,fatigue,severe cough,none,9,Female,10,none
+Strep Throat,Moderate,difficulty swallowing,fever,swollen lymph nodes,headache,severe sore throat,none,39,Male,6,none
+Bronchitis,Moderate,fatigue,mucus production,mild fever,chest discomfort,none,none,61,Male,6,hypertension
+Bronchitis,Mild,persistent cough,mild fever,mucus production,chest discomfort,fatigue,none,27,Male,1,none
+Bronchitis,Mild,persistent cough,mild fever,chest discomfort,mucus production,none,none,37,Female,1,none
+Strep Throat,Moderate,severe sore throat,swollen lymph nodes,fever,headache,difficulty swallowing,none,38,Male,10,none
+Gastroenteritis,Severe,nausea,abdominal pain,fever,vomiting,diarrhea,none,76,Male,13,hypertension
+Common Cold,Mild,mild fever,sneezing,sore throat,mild cough,none,none,69,Male,2,hypertension
+Allergies,Mild,congestion,mild cough,itchy eyes,none,none,none,68,Male,13,hypertension
+Migraine,Moderate,nausea,visual disturbance,light sensitivity,severe headache,none,none,53,Male,7,none
+Gastroenteritis,Mild,abdominal pain,diarrhea,fever,none,none,none,7,Male,13,none
+Strep Throat,Moderate,fever,swollen lymph nodes,headache,difficulty swallowing,severe sore throat,none,84,Male,3,diabetes
+Allergies,Mild,sneezing,runny nose,mild cough,none,none,none,19,Male,11,hypertension
+Urinary Tract Infection,Mild,frequent urination,fever,cloudy urine,abdominal pain,burning sensation,none,10,Female,9,none
+Pneumonia,Severe,shortness of breath,high fever,chest pain,none,none,none,83,Female,13,asthma
+COVID-19,Moderate,fever,loss of smell,dry cough,fatigue,shortness of breath,none,79,Female,11,none
+Influenza,Mild,headache,body ache,severe cough,fatigue,none,none,83,Female,9,asthma
+Urinary Tract Infection,Moderate,abdominal pain,cloudy urine,fever,frequent urination,none,none,62,Female,1,diabetes
+COVID-19,Mild,fever,dry cough,shortness of breath,loss of taste,fatigue,loss of smell,10,Male,10,none
+Gastroenteritis,Severe,nausea,dehydration,vomiting,abdominal pain,fever,none,66,Female,12,asthma
+Allergies,Moderate,runny nose,congestion,mild cough,sneezing,itchy eyes,none,80,Female,12,heart disease
+Common Cold,Mild,runny nose,sore throat,mild cough,mild fever,none,none,66,Female,1,hypertension
+Allergies,Mild,sneezing,mild cough,congestion,none,none,none,49,Female,12,none
+Pneumonia,Severe,fatigue,shortness of breath,severe cough,high fever,chest pain,none,27,Male,6,none
+Strep Throat,Mild,fever,difficulty swallowing,severe sore throat,none,none,none,41,Male,6,diabetes
+Bronchitis,Mild,chest discomfort,mucus production,persistent cough,fatigue,mild fever,none,54,Female,6,none
+Migraine,Severe,nausea,visual disturbance,severe headache,light sensitivity,none,none,22,Female,8,heart disease
+Allergies,Mild,runny nose,sneezing,congestion,none,none,none,65,Female,3,none
+COVID-19,Severe,loss of smell,dry cough,loss of taste,fever,shortness of breath,none,25,Male,6,none
+Bronchitis,Moderate,fatigue,chest discomfort,mild fever,persistent cough,mucus production,none,62,Male,3,heart disease
+Bronchitis,Severe,chest discomfort,fatigue,persistent cough,none,none,none,23,Male,2,none
+Urinary Tract Infection,Mild,frequent urination,burning sensation,fever,cloudy urine,abdominal pain,none,32,Male,11,none
+Bronchitis,Mild,mild fever,persistent cough,fatigue,chest discomfort,mucus production,none,42,Male,11,none
+Influenza,Mild,headache,high fever,severe cough,fatigue,body ache,none,9,Male,9,none
+Urinary Tract Infection,Moderate,fever,frequent urination,abdominal pain,none,none,none,8,Male,8,none
+Allergies,Mild,mild cough,itchy eyes,runny nose,congestion,none,none,54,Female,1,none
+Migraine,Moderate,severe headache,light sensitivity,nausea,visual disturbance,none,none,60,Female,13,asthma
+Bronchitis,Moderate,persistent cough,mild fever,fatigue,none,none,none,44,Male,6,none
+Migraine,Moderate,light sensitivity,visual disturbance,severe headache,nausea,none,none,59,Female,11,heart disease
+Migraine,Mild,nausea,visual disturbance,severe headache,light sensitivity,none,none,77,Male,3,diabetes
+Strep Throat,Moderate,difficulty swallowing,headache,fever,none,none,none,24,Female,7,none
+Common Cold,Mild,sore throat,mild cough,runny nose,none,none,none,54,Male,12,asthma
+Pneumonia,Severe,fatigue,severe cough,high fever,shortness of breath,none,none,41,Female,9,none
+Migraine,Mild,severe headache,nausea,light sensitivity,visual disturbance,none,none,68,Female,13,hypertension
+Strep Throat,Mild,difficulty swallowing,fever,headache,severe sore throat,swollen lymph nodes,none,30,Female,4,asthma
+Allergies,Mild,congestion,sneezing,mild cough,itchy eyes,runny nose,none,66,Male,6,none
+Migraine,Mild,light sensitivity,severe headache,nausea,visual disturbance,none,none,61,Male,10,hypertension
+Influenza,Severe,severe cough,fatigue,body ache,none,none,none,21,Male,10,none
+Gastroenteritis,Mild,diarrhea,vomiting,dehydration,abdominal pain,nausea,none,81,Female,9,asthma
+Allergies,Mild,runny nose,congestion,sneezing,itchy eyes,mild cough,none,20,Male,7,none
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,fever,frequent urination,cloudy urine,none,81,Male,12,asthma
+Allergies,Mild,runny nose,congestion,sneezing,itchy eyes,mild cough,none,67,Female,8,diabetes
+COVID-19,Mild,fever,shortness of breath,loss of smell,dry cough,fatigue,loss of taste,42,Female,7,none
+Urinary Tract Infection,Mild,frequent urination,fever,cloudy urine,burning sensation,none,none,53,Male,13,none
+Pneumonia,Severe,shortness of breath,fatigue,chest pain,none,none,none,26,Female,13,none
+Strep Throat,Mild,difficulty swallowing,fever,headache,swollen lymph nodes,none,none,5,Male,13,hypertension
+Strep Throat,Mild,headache,swollen lymph nodes,severe sore throat,fever,difficulty swallowing,none,12,Male,10,none
+Gastroenteritis,Moderate,diarrhea,vomiting,fever,none,none,none,21,Female,7,none
+Influenza,Moderate,headache,fatigue,severe cough,none,none,none,59,Male,8,heart disease
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,abdominal pain,fever,burning sensation,none,56,Female,1,none
+Urinary Tract Infection,Mild,burning sensation,cloudy urine,abdominal pain,fever,none,none,13,Female,12,none
+Urinary Tract Infection,Moderate,fever,cloudy urine,frequent urination,none,none,none,66,Male,11,asthma
+Common Cold,Moderate,mild fever,mild cough,sore throat,none,none,none,60,Female,6,hypertension
+Bronchitis,Mild,chest discomfort,fatigue,persistent cough,none,none,none,15,Female,1,none
+Influenza,Moderate,headache,body ache,high fever,chills,fatigue,none,32,Female,6,none
+COVID-19,Severe,shortness of breath,fatigue,loss of taste,fever,dry cough,loss of smell,56,Female,1,none
+Gastroenteritis,Mild,nausea,abdominal pain,fever,vomiting,diarrhea,dehydration,32,Male,10,none
+Migraine,Mild,severe headache,visual disturbance,nausea,none,none,none,31,Male,8,none
+Migraine,Severe,visual disturbance,light sensitivity,severe headache,nausea,none,none,71,Female,8,asthma
+Strep Throat,Severe,fever,severe sore throat,headache,none,none,none,9,Male,10,none
+Common Cold,Mild,sneezing,mild fever,runny nose,sore throat,mild cough,none,51,Female,7,none
+Pneumonia,Moderate,severe cough,chest pain,fatigue,high fever,shortness of breath,none,70,Female,3,hypertension
+Urinary Tract Infection,Moderate,abdominal pain,cloudy urine,burning sensation,fever,frequent urination,none,42,Male,10,none
+Pneumonia,Severe,high fever,chest pain,shortness of breath,fatigue,severe cough,none,51,Male,4,none
+Bronchitis,Moderate,persistent cough,chest discomfort,fatigue,mucus production,mild fever,none,14,Male,4,diabetes
+Gastroenteritis,Moderate,abdominal pain,diarrhea,nausea,vomiting,dehydration,none,60,Male,13,none
+Bronchitis,Moderate,fatigue,persistent cough,mucus production,none,none,none,55,Female,11,none
+Gastroenteritis,Severe,nausea,vomiting,dehydration,abdominal pain,none,none,58,Female,10,none
+Gastroenteritis,Mild,nausea,dehydration,diarrhea,abdominal pain,fever,none,56,Male,12,none
+Allergies,Mild,runny nose,mild cough,sneezing,itchy eyes,congestion,none,58,Female,5,none
+Allergies,Mild,congestion,mild cough,runny nose,sneezing,none,none,17,Male,6,none
+Allergies,Mild,mild cough,sneezing,runny nose,itchy eyes,congestion,none,35,Male,8,none
+Allergies,Mild,congestion,mild cough,itchy eyes,none,none,none,51,Male,10,none
+Allergies,Mild,mild cough,itchy eyes,sneezing,congestion,runny nose,none,17,Male,12,asthma
+COVID-19,Mild,dry cough,fatigue,fever,shortness of breath,loss of smell,none,39,Female,10,none
+Migraine,Severe,nausea,light sensitivity,visual disturbance,severe headache,none,none,54,Male,3,none
+Allergies,Mild,runny nose,sneezing,itchy eyes,mild cough,none,none,44,Male,12,none
+Pneumonia,Severe,high fever,fatigue,severe cough,none,none,none,12,Female,11,none
+Gastroenteritis,Mild,nausea,dehydration,fever,none,none,none,84,Male,10,hypertension
+Influenza,Severe,fatigue,high fever,body ache,none,none,none,27,Male,6,none
+Pneumonia,Severe,severe cough,shortness of breath,high fever,none,none,none,77,Male,10,asthma
+Migraine,Mild,severe headache,nausea,visual disturbance,light sensitivity,none,none,21,Female,4,none
+Common Cold,Moderate,sore throat,mild fever,sneezing,none,none,none,26,Male,4,none
+Gastroenteritis,Moderate,abdominal pain,nausea,dehydration,vomiting,diarrhea,none,18,Male,2,asthma
+Urinary Tract Infection,Mild,cloudy urine,fever,frequent urination,none,none,none,34,Male,12,asthma
+Migraine,Severe,visual disturbance,nausea,severe headache,light sensitivity,none,none,62,Female,7,none
+Urinary Tract Infection,Mild,frequent urination,cloudy urine,burning sensation,fever,none,none,15,Male,5,none
+Gastroenteritis,Severe,diarrhea,fever,dehydration,abdominal pain,vomiting,none,79,Female,1,diabetes
+COVID-19,Moderate,shortness of breath,fever,fatigue,none,none,none,51,Male,10,none
+Pneumonia,Severe,shortness of breath,severe cough,high fever,fatigue,chest pain,none,76,Male,7,asthma
+Migraine,Mild,light sensitivity,nausea,severe headache,visual disturbance,none,none,67,Male,1,hypertension
+Bronchitis,Moderate,mild fever,persistent cough,chest discomfort,mucus production,fatigue,none,34,Male,10,none
+Pneumonia,Moderate,chest pain,high fever,shortness of breath,severe cough,fatigue,none,51,Female,4,asthma
+Strep Throat,Moderate,severe sore throat,difficulty swallowing,swollen lymph nodes,none,none,none,29,Female,4,none
+Influenza,Moderate,headache,severe cough,high fever,none,none,none,17,Male,6,none
+Allergies,Mild,runny nose,congestion,sneezing,itchy eyes,mild cough,none,42,Female,4,none
+Urinary Tract Infection,Mild,cloudy urine,abdominal pain,burning sensation,fever,frequent urination,none,79,Male,6,heart disease
+Influenza,Mild,fatigue,headache,severe cough,none,none,none,35,Female,3,none
+COVID-19,Moderate,fever,loss of smell,shortness of breath,loss of taste,dry cough,none,21,Female,7,none
+Migraine,Moderate,nausea,severe headache,visual disturbance,none,none,none,30,Male,2,none
+Common Cold,Mild,sneezing,mild fever,runny nose,none,none,none,75,Female,10,none
+COVID-19,Mild,fatigue,fever,loss of smell,shortness of breath,none,none,71,Female,11,asthma
+Influenza,Moderate,high fever,severe cough,headache,none,none,none,29,Female,13,none
+Strep Throat,Mild,fever,difficulty swallowing,swollen lymph nodes,headache,severe sore throat,none,41,Female,13,none
+Pneumonia,Moderate,shortness of breath,chest pain,severe cough,fatigue,none,none,70,Female,8,diabetes
+Strep Throat,Severe,fever,headache,severe sore throat,none,none,none,43,Female,2,none
+Pneumonia,Severe,shortness of breath,severe cough,fatigue,chest pain,high fever,none,33,Male,12,none
+Pneumonia,Severe,severe cough,high fever,shortness of breath,none,none,none,18,Female,10,none
+Migraine,Moderate,light sensitivity,nausea,severe headache,visual disturbance,none,none,84,Male,4,heart disease
+Common Cold,Mild,runny nose,mild cough,sneezing,none,none,none,20,Male,5,none
+Migraine,Mild,visual disturbance,severe headache,light sensitivity,nausea,none,none,16,Female,1,none
+Gastroenteritis,Moderate,diarrhea,dehydration,vomiting,fever,none,none,9,Male,11,none
+Migraine,Severe,visual disturbance,severe headache,nausea,light sensitivity,none,none,35,Male,1,none
+Allergies,Mild,runny nose,sneezing,mild cough,itchy eyes,none,none,74,Male,9,hypertension
+Influenza,Mild,chills,body ache,high fever,none,none,none,48,Male,11,none
+Allergies,Mild,mild cough,congestion,runny nose,sneezing,itchy eyes,none,24,Female,3,none
+Strep Throat,Severe,fever,swollen lymph nodes,difficulty swallowing,none,none,none,12,Male,3,none
+COVID-19,Moderate,shortness of breath,dry cough,fever,none,none,none,8,Male,6,none
+Urinary Tract Infection,Moderate,burning sensation,frequent urination,abdominal pain,cloudy urine,none,none,47,Male,8,asthma
+Strep Throat,Mild,swollen lymph nodes,severe sore throat,headache,difficulty swallowing,none,none,13,Female,8,hypertension
+Gastroenteritis,Severe,fever,nausea,dehydration,vomiting,diarrhea,none,47,Male,6,none
+Allergies,Moderate,congestion,itchy eyes,sneezing,none,none,none,63,Female,6,none
+Gastroenteritis,Moderate,dehydration,diarrhea,vomiting,nausea,abdominal pain,none,47,Male,5,none
+Bronchitis,Moderate,mucus production,mild fever,chest discomfort,fatigue,persistent cough,none,61,Female,6,heart disease
+Common Cold,Mild,sore throat,runny nose,mild fever,mild cough,sneezing,none,27,Female,12,none
+Urinary Tract Infection,Mild,fever,abdominal pain,cloudy urine,burning sensation,none,none,18,Female,3,none
+Common Cold,Mild,sneezing,mild cough,mild fever,runny nose,sore throat,none,55,Female,10,none
+Bronchitis,Moderate,persistent cough,mild fever,fatigue,mucus production,chest discomfort,none,11,Female,1,none
+Urinary Tract Infection,Moderate,fever,cloudy urine,abdominal pain,frequent urination,none,none,56,Male,1,asthma
+Influenza,Moderate,chills,headache,body ache,severe cough,fatigue,high fever,75,Female,2,none
+COVID-19,Mild,fever,shortness of breath,dry cough,loss of smell,loss of taste,fatigue,31,Female,9,none
+COVID-19,Moderate,dry cough,loss of smell,fever,fatigue,shortness of breath,none,50,Female,7,none
+Allergies,Mild,sneezing,itchy eyes,congestion,mild cough,runny nose,none,57,Male,7,none
+Strep Throat,Moderate,swollen lymph nodes,fever,headache,severe sore throat,none,none,28,Female,3,none
+Bronchitis,Moderate,mild fever,chest discomfort,fatigue,mucus production,none,none,31,Male,9,none
+Gastroenteritis,Moderate,abdominal pain,fever,dehydration,none,none,none,48,Female,2,none
+Influenza,Mild,severe cough,fatigue,high fever,body ache,headache,chills,15,Female,11,none
+Common Cold,Moderate,runny nose,mild cough,sneezing,sore throat,none,none,10,Female,9,none
+Bronchitis,Mild,persistent cough,mucus production,fatigue,chest discomfort,mild fever,none,55,Male,1,none
+Allergies,Mild,mild cough,runny nose,sneezing,itchy eyes,congestion,none,63,Female,11,heart disease
+Gastroenteritis,Mild,nausea,abdominal pain,vomiting,none,none,none,39,Female,12,none
+COVID-19,Mild,shortness of breath,fever,fatigue,loss of taste,loss of smell,none,12,Male,13,none
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,fever,frequent urination,cloudy urine,none,45,Female,8,none
+Common Cold,Mild,runny nose,mild fever,sneezing,sore throat,none,none,54,Female,9,asthma
+Strep Throat,Severe,difficulty swallowing,fever,headache,swollen lymph nodes,none,none,73,Male,9,diabetes
+Influenza,Moderate,headache,body ache,severe cough,chills,high fever,none,13,Female,4,none
+Pneumonia,Severe,fatigue,shortness of breath,high fever,chest pain,none,none,84,Female,7,hypertension
+Bronchitis,Mild,mild fever,persistent cough,fatigue,none,none,none,78,Male,13,asthma
+Influenza,Moderate,body ache,chills,fatigue,headache,severe cough,none,18,Female,13,heart disease
+Urinary Tract Infection,Mild,frequent urination,burning sensation,fever,none,none,none,23,Female,12,none
+Common Cold,Mild,mild fever,sneezing,runny nose,mild cough,sore throat,none,30,Male,2,none
+Migraine,Moderate,light sensitivity,visual disturbance,severe headache,nausea,none,none,58,Female,12,none
+Migraine,Severe,severe headache,nausea,visual disturbance,light sensitivity,none,none,29,Male,1,none
+COVID-19,Moderate,loss of smell,fever,dry cough,fatigue,shortness of breath,loss of taste,83,Male,5,asthma
+Gastroenteritis,Mild,dehydration,nausea,diarrhea,vomiting,abdominal pain,none,46,Male,2,diabetes
+Allergies,Mild,runny nose,itchy eyes,mild cough,congestion,sneezing,none,44,Female,13,none
+Gastroenteritis,Moderate,diarrhea,vomiting,nausea,abdominal pain,dehydration,fever,29,Female,2,none
+Urinary Tract Infection,Severe,frequent urination,fever,burning sensation,none,none,none,28,Male,2,none
+Pneumonia,Moderate,shortness of breath,severe cough,chest pain,none,none,none,49,Male,12,asthma
+Influenza,Moderate,chills,high fever,fatigue,none,none,none,58,Male,9,none
+COVID-19,Mild,fever,shortness of breath,loss of taste,none,none,none,49,Female,5,none
+Urinary Tract Infection,Moderate,frequent urination,burning sensation,fever,cloudy urine,abdominal pain,none,22,Female,8,none
+Urinary Tract Infection,Moderate,burning sensation,cloudy urine,frequent urination,abdominal pain,fever,none,8,Male,3,none
+Bronchitis,Moderate,persistent cough,mucus production,mild fever,chest discomfort,fatigue,none,17,Female,10,none
+Urinary Tract Infection,Mild,frequent urination,burning sensation,cloudy urine,fever,abdominal pain,none,15,Male,5,asthma
+Pneumonia,Severe,high fever,chest pain,severe cough,shortness of breath,fatigue,none,77,Female,7,hypertension
+Migraine,Severe,severe headache,nausea,visual disturbance,light sensitivity,none,none,27,Male,10,none
+Gastroenteritis,Mild,fever,dehydration,diarrhea,abdominal pain,vomiting,none,29,Male,10,none
+Strep Throat,Mild,severe sore throat,swollen lymph nodes,headache,difficulty swallowing,fever,none,68,Male,3,hypertension
+COVID-19,Mild,dry cough,fatigue,loss of taste,loss of smell,none,none,39,Male,1,none
+Pneumonia,Moderate,fatigue,chest pain,shortness of breath,severe cough,high fever,none,55,Female,2,none
+Pneumonia,Severe,fatigue,shortness of breath,high fever,severe cough,chest pain,none,31,Female,2,none
+Allergies,Mild,mild cough,sneezing,congestion,itchy eyes,runny nose,none,59,Male,8,heart disease
+COVID-19,Mild,fever,shortness of breath,fatigue,loss of taste,none,none,55,Female,5,none
+Gastroenteritis,Severe,fever,nausea,vomiting,abdominal pain,none,none,5,Male,8,none
+Pneumonia,Mild,shortness of breath,severe cough,chest pain,fatigue,high fever,none,31,Male,11,heart disease
+Gastroenteritis,Moderate,abdominal pain,dehydration,vomiting,fever,diarrhea,nausea,67,Female,5,asthma
+Common Cold,Moderate,runny nose,sneezing,mild cough,sore throat,mild fever,none,18,Male,13,none
+Common Cold,Mild,runny nose,mild fever,sneezing,mild cough,sore throat,none,83,Male,6,hypertension
+Influenza,Severe,fatigue,chills,body ache,high fever,headache,severe cough,65,Female,4,asthma
+Common Cold,Mild,mild fever,mild cough,runny nose,sneezing,none,none,75,Male,7,asthma
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,fever,burning sensation,none,none,60,Female,13,none
+Bronchitis,Moderate,chest discomfort,fatigue,mucus production,persistent cough,none,none,47,Male,10,diabetes
+Pneumonia,Severe,high fever,severe cough,shortness of breath,none,none,none,73,Male,4,diabetes
+COVID-19,Mild,loss of taste,loss of smell,dry cough,none,none,none,68,Female,6,none
+Allergies,Mild,mild cough,congestion,itchy eyes,runny nose,sneezing,none,5,Female,4,none
+Influenza,Moderate,headache,body ache,high fever,fatigue,chills,none,59,Female,12,none
+Influenza,Mild,headache,severe cough,high fever,fatigue,chills,none,58,Male,1,none
+Gastroenteritis,Moderate,abdominal pain,fever,dehydration,none,none,none,34,Female,2,none
+COVID-19,Moderate,fever,loss of smell,fatigue,loss of taste,shortness of breath,none,72,Female,1,none
+Bronchitis,Severe,fatigue,mucus production,chest discomfort,mild fever,none,none,60,Male,6,none
+Migraine,Mild,light sensitivity,visual disturbance,severe headache,nausea,none,none,28,Female,7,asthma
+Urinary Tract Infection,Mild,frequent urination,cloudy urine,burning sensation,abdominal pain,fever,none,79,Female,13,heart disease
+Strep Throat,Moderate,headache,swollen lymph nodes,difficulty swallowing,fever,none,none,21,Female,7,asthma
+Migraine,Moderate,nausea,severe headache,visual disturbance,light sensitivity,none,none,39,Female,13,diabetes
+Bronchitis,Mild,mucus production,chest discomfort,mild fever,none,none,none,57,Female,12,none
+Allergies,Moderate,itchy eyes,congestion,sneezing,mild cough,runny nose,none,47,Male,9,none
+Gastroenteritis,Severe,nausea,dehydration,vomiting,diarrhea,abdominal pain,fever,82,Female,7,asthma
+Influenza,Moderate,severe cough,chills,fatigue,high fever,none,none,36,Male,4,none
+Bronchitis,Mild,fatigue,persistent cough,chest discomfort,mucus production,none,none,27,Female,13,none
+Strep Throat,Mild,headache,difficulty swallowing,fever,none,none,none,73,Male,2,none
+Common Cold,Mild,sore throat,runny nose,mild cough,sneezing,mild fever,none,33,Female,1,none
+Gastroenteritis,Severe,nausea,fever,dehydration,abdominal pain,vomiting,none,5,Male,4,none
+Gastroenteritis,Mild,diarrhea,abdominal pain,nausea,fever,none,none,78,Male,10,asthma
+Migraine,Severe,visual disturbance,nausea,light sensitivity,severe headache,none,none,68,Female,11,none
+Influenza,Mild,headache,chills,high fever,severe cough,body ache,none,64,Female,10,hypertension
+Strep Throat,Moderate,difficulty swallowing,severe sore throat,fever,none,none,none,49,Female,8,heart disease
+Common Cold,Mild,sore throat,mild cough,sneezing,none,none,none,66,Female,9,hypertension
+Common Cold,Moderate,runny nose,mild cough,mild fever,none,none,none,25,Female,7,none
+Strep Throat,Moderate,headache,fever,swollen lymph nodes,none,none,none,49,Female,1,none
+Common Cold,Mild,runny nose,mild fever,mild cough,none,none,none,51,Male,12,diabetes
+Bronchitis,Moderate,fatigue,persistent cough,chest discomfort,mucus production,mild fever,none,50,Female,1,none
+Bronchitis,Moderate,mild fever,chest discomfort,fatigue,persistent cough,mucus production,none,37,Female,1,none
+COVID-19,Moderate,loss of smell,fatigue,shortness of breath,loss of taste,dry cough,none,50,Female,8,none
+Common Cold,Mild,mild fever,mild cough,sore throat,none,none,none,76,Male,7,hypertension
+Pneumonia,Moderate,fatigue,shortness of breath,high fever,chest pain,severe cough,none,75,Male,10,diabetes
+Pneumonia,Severe,fatigue,chest pain,severe cough,shortness of breath,high fever,none,18,Female,1,none
+Common Cold,Mild,mild cough,runny nose,mild fever,none,none,none,44,Female,10,none
+Gastroenteritis,Moderate,nausea,fever,diarrhea,none,none,none,16,Female,2,none
+COVID-19,Severe,loss of taste,fever,shortness of breath,dry cough,none,none,26,Female,12,none
+Allergies,Moderate,sneezing,runny nose,mild cough,itchy eyes,none,none,10,Female,11,none
+Bronchitis,Mild,mucus production,chest discomfort,fatigue,persistent cough,mild fever,none,73,Male,5,asthma
+COVID-19,Mild,loss of taste,loss of smell,fatigue,none,none,none,15,Female,8,none
+COVID-19,Mild,fever,loss of taste,fatigue,loss of smell,dry cough,none,38,Male,10,none
+Common Cold,Mild,sore throat,sneezing,mild fever,runny nose,mild cough,none,8,Female,5,asthma
+Common Cold,Mild,sore throat,mild cough,runny nose,mild fever,none,none,61,Male,12,asthma
+Migraine,Mild,visual disturbance,nausea,severe headache,light sensitivity,none,none,12,Female,13,none
+Allergies,Mild,itchy eyes,mild cough,sneezing,runny nose,none,none,43,Female,8,none
+Urinary Tract Infection,Severe,frequent urination,abdominal pain,fever,none,none,none,48,Female,7,diabetes
+Allergies,Mild,sneezing,congestion,mild cough,none,none,none,76,Male,8,diabetes
+Urinary Tract Infection,Moderate,cloudy urine,fever,burning sensation,abdominal pain,none,none,80,Female,10,diabetes
+Urinary Tract Infection,Mild,frequent urination,abdominal pain,cloudy urine,fever,burning sensation,none,27,Female,9,hypertension
+Gastroenteritis,Moderate,diarrhea,dehydration,abdominal pain,none,none,none,39,Male,2,none
+Influenza,Moderate,severe cough,fatigue,high fever,body ache,none,none,53,Male,2,none
+Pneumonia,Severe,high fever,chest pain,severe cough,none,none,none,23,Female,7,none
+Common Cold,Mild,mild cough,mild fever,sore throat,runny nose,sneezing,none,9,Female,6,heart disease
+COVID-19,Severe,fever,loss of smell,shortness of breath,fatigue,none,none,32,Female,13,none
+Influenza,Moderate,high fever,fatigue,severe cough,chills,body ache,none,77,Female,5,asthma
+Strep Throat,Moderate,fever,difficulty swallowing,swollen lymph nodes,severe sore throat,headache,none,11,Female,12,none
+Pneumonia,Severe,fatigue,chest pain,high fever,none,none,none,41,Male,13,none
+Common Cold,Mild,runny nose,sneezing,sore throat,mild cough,mild fever,none,72,Female,5,hypertension
+Strep Throat,Moderate,fever,difficulty swallowing,headache,none,none,none,58,Female,8,asthma
+Influenza,Moderate,fatigue,high fever,chills,severe cough,none,none,82,Male,10,hypertension
+Bronchitis,Severe,mild fever,mucus production,fatigue,none,none,none,47,Male,6,none
+COVID-19,Severe,fever,shortness of breath,fatigue,loss of smell,none,none,84,Female,4,none
+Influenza,Mild,body ache,chills,fatigue,high fever,severe cough,headache,39,Female,9,none
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,cloudy urine,frequent urination,none,none,83,Female,10,none
+Pneumonia,Severe,shortness of breath,high fever,severe cough,none,none,none,21,Female,11,hypertension
+COVID-19,Moderate,loss of smell,loss of taste,fatigue,fever,none,none,8,Male,11,none
+Gastroenteritis,Mild,fever,dehydration,diarrhea,abdominal pain,nausea,none,35,Male,8,none
+Influenza,Moderate,headache,severe cough,chills,body ache,fatigue,none,31,Female,12,none
+COVID-19,Moderate,loss of taste,loss of smell,fatigue,shortness of breath,none,none,80,Male,5,hypertension
+Strep Throat,Severe,difficulty swallowing,severe sore throat,fever,swollen lymph nodes,headache,none,41,Male,1,none
+COVID-19,Mild,fever,loss of taste,loss of smell,shortness of breath,none,none,56,Male,13,heart disease
+Urinary Tract Infection,Moderate,frequent urination,burning sensation,abdominal pain,fever,cloudy urine,none,59,Female,10,none
+Gastroenteritis,Severe,diarrhea,nausea,abdominal pain,none,none,none,55,Male,8,asthma
+Common Cold,Mild,sore throat,mild cough,runny nose,sneezing,mild fever,none,73,Female,9,diabetes
+Pneumonia,Severe,severe cough,chest pain,shortness of breath,none,none,none,17,Female,8,none
+Common Cold,Moderate,mild cough,runny nose,mild fever,sore throat,sneezing,none,5,Male,10,none
+Migraine,Severe,severe headache,visual disturbance,nausea,light sensitivity,none,none,9,Female,5,none
+Allergies,Mild,runny nose,mild cough,sneezing,none,none,none,46,Male,3,hypertension
+COVID-19,Mild,loss of smell,dry cough,fever,none,none,none,59,Female,7,none
+Bronchitis,Moderate,mucus production,chest discomfort,fatigue,none,none,none,23,Male,8,hypertension
+Strep Throat,Mild,difficulty swallowing,headache,severe sore throat,swollen lymph nodes,none,none,6,Male,4,none
+Bronchitis,Mild,mild fever,chest discomfort,fatigue,persistent cough,mucus production,none,43,Female,8,asthma
+Allergies,Mild,mild cough,itchy eyes,sneezing,none,none,none,28,Female,5,none
+Urinary Tract Infection,Moderate,abdominal pain,cloudy urine,frequent urination,burning sensation,fever,none,27,Male,1,none
+Urinary Tract Infection,Moderate,burning sensation,abdominal pain,frequent urination,cloudy urine,fever,none,80,Female,1,diabetes
+Common Cold,Mild,sore throat,runny nose,sneezing,mild fever,none,none,22,Female,11,none
+Gastroenteritis,Moderate,diarrhea,nausea,dehydration,none,none,none,75,Female,2,diabetes
+Urinary Tract Infection,Severe,fever,cloudy urine,abdominal pain,burning sensation,frequent urination,none,9,Female,12,none
+Gastroenteritis,Mild,diarrhea,dehydration,vomiting,fever,abdominal pain,nausea,35,Male,4,heart disease
+Gastroenteritis,Moderate,vomiting,abdominal pain,fever,diarrhea,dehydration,nausea,9,Female,2,diabetes
+Gastroenteritis,Severe,nausea,abdominal pain,fever,diarrhea,none,none,72,Male,9,heart disease
+Gastroenteritis,Mild,diarrhea,abdominal pain,nausea,fever,dehydration,none,38,Female,6,none
+Influenza,Mild,high fever,headache,fatigue,body ache,chills,severe cough,80,Male,1,heart disease
+Migraine,Moderate,light sensitivity,severe headache,nausea,visual disturbance,none,none,56,Female,3,none
+Strep Throat,Moderate,difficulty swallowing,swollen lymph nodes,headache,none,none,none,8,Female,11,none
+Pneumonia,Moderate,high fever,severe cough,chest pain,none,none,none,44,Male,4,none
+Allergies,Mild,runny nose,itchy eyes,sneezing,none,none,none,6,Male,13,none
+Pneumonia,Moderate,severe cough,shortness of breath,chest pain,fatigue,high fever,none,59,Male,3,none
+Migraine,Mild,nausea,severe headache,light sensitivity,none,none,none,61,Male,13,heart disease
+Migraine,Moderate,light sensitivity,nausea,visual disturbance,severe headache,none,none,49,Male,3,none
+Strep Throat,Moderate,severe sore throat,fever,difficulty swallowing,swollen lymph nodes,headache,none,71,Female,11,hypertension
+Influenza,Moderate,headache,severe cough,body ache,chills,none,none,16,Male,7,none
+Allergies,Moderate,sneezing,congestion,mild cough,none,none,none,83,Female,1,none
+Bronchitis,Moderate,fatigue,mild fever,mucus production,none,none,none,22,Female,6,hypertension
+COVID-19,Mild,loss of smell,fever,fatigue,loss of taste,shortness of breath,none,58,Female,3,none
+Influenza,Moderate,body ache,chills,severe cough,fatigue,none,none,57,Male,13,none
+Strep Throat,Severe,severe sore throat,swollen lymph nodes,headache,none,none,none,63,Female,5,none
+Influenza,Moderate,headache,chills,fatigue,none,none,none,55,Male,4,none
+Migraine,Severe,nausea,visual disturbance,light sensitivity,severe headache,none,none,79,Male,1,none
+Allergies,Mild,congestion,sneezing,mild cough,itchy eyes,none,none,69,Male,3,asthma
+Gastroenteritis,Mild,abdominal pain,dehydration,fever,none,none,none,68,Female,5,none
+Influenza,Moderate,high fever,fatigue,body ache,severe cough,headache,chills,53,Male,6,none
+COVID-19,Moderate,shortness of breath,loss of taste,loss of smell,fever,none,none,30,Female,5,asthma
+Common Cold,Severe,sneezing,runny nose,sore throat,mild cough,mild fever,none,84,Male,11,diabetes
+Allergies,Mild,itchy eyes,sneezing,mild cough,congestion,runny nose,none,15,Female,8,none
+Gastroenteritis,Severe,nausea,vomiting,diarrhea,abdominal pain,fever,dehydration,68,Female,4,asthma
+Influenza,Moderate,chills,fatigue,body ache,none,none,none,84,Female,4,diabetes
+Bronchitis,Moderate,mild fever,mucus production,fatigue,chest discomfort,none,none,52,Female,5,none
+Urinary Tract Infection,Mild,cloudy urine,burning sensation,frequent urination,none,none,none,53,Male,12,none
+Gastroenteritis,Mild,nausea,abdominal pain,dehydration,none,none,none,62,Female,2,heart disease
+Bronchitis,Mild,fatigue,chest discomfort,mucus production,mild fever,persistent cough,none,58,Male,3,none
+Strep Throat,Moderate,severe sore throat,fever,swollen lymph nodes,difficulty swallowing,none,none,6,Female,6,none
+Gastroenteritis,Severe,vomiting,diarrhea,dehydration,fever,nausea,abdominal pain,7,Female,7,asthma
+Allergies,Mild,itchy eyes,congestion,runny nose,sneezing,mild cough,none,78,Male,8,asthma
+Migraine,Mild,nausea,visual disturbance,severe headache,light sensitivity,none,none,20,Male,9,none
+Common Cold,Mild,mild fever,runny nose,sore throat,mild cough,sneezing,none,14,Male,2,none
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,fever,abdominal pain,none,none,80,Male,1,none
+Bronchitis,Mild,fatigue,chest discomfort,mild fever,persistent cough,mucus production,none,24,Female,5,none
+Common Cold,Mild,runny nose,mild fever,sneezing,sore throat,mild cough,none,59,Male,10,none
+Bronchitis,Mild,chest discomfort,persistent cough,fatigue,mucus production,mild fever,none,57,Female,4,hypertension
+Pneumonia,Severe,high fever,shortness of breath,severe cough,none,none,none,25,Female,12,none
+Gastroenteritis,Moderate,diarrhea,fever,abdominal pain,none,none,none,77,Male,1,diabetes
+Pneumonia,Severe,shortness of breath,chest pain,fatigue,severe cough,high fever,none,55,Female,2,asthma
+COVID-19,Mild,shortness of breath,loss of taste,fever,loss of smell,dry cough,none,16,Male,5,none
+Strep Throat,Severe,headache,swollen lymph nodes,severe sore throat,fever,difficulty swallowing,none,13,Male,1,none
+Influenza,Moderate,severe cough,body ache,fatigue,none,none,none,19,Female,8,none
+Pneumonia,Severe,high fever,fatigue,shortness of breath,severe cough,none,none,79,Female,3,hypertension
+Strep Throat,Mild,severe sore throat,fever,swollen lymph nodes,difficulty swallowing,headache,none,62,Female,9,none
+Pneumonia,Severe,high fever,chest pain,fatigue,shortness of breath,severe cough,none,9,Female,5,none
+Urinary Tract Infection,Mild,cloudy urine,fever,abdominal pain,burning sensation,none,none,33,Male,10,none
+Urinary Tract Infection,Moderate,frequent urination,fever,abdominal pain,cloudy urine,none,none,55,Male,7,none
+Gastroenteritis,Moderate,diarrhea,abdominal pain,fever,dehydration,vomiting,none,35,Female,2,heart disease
+Bronchitis,Severe,persistent cough,mild fever,fatigue,chest discomfort,none,none,38,Male,7,asthma
+Allergies,Mild,mild cough,runny nose,congestion,sneezing,itchy eyes,none,28,Male,6,none
+Strep Throat,Moderate,fever,headache,severe sore throat,none,none,none,22,Male,4,hypertension
+Allergies,Mild,congestion,sneezing,mild cough,none,none,none,34,Female,2,asthma
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,frequent urination,cloudy urine,fever,none,83,Female,8,heart disease
+Migraine,Moderate,severe headache,visual disturbance,light sensitivity,nausea,none,none,54,Female,13,none
+Urinary Tract Infection,Mild,burning sensation,fever,cloudy urine,none,none,none,27,Male,10,asthma
+Migraine,Moderate,visual disturbance,light sensitivity,severe headache,none,none,none,9,Female,13,diabetes
+Gastroenteritis,Severe,dehydration,abdominal pain,nausea,none,none,none,81,Male,1,asthma
+Common Cold,Moderate,sore throat,mild cough,mild fever,none,none,none,22,Male,9,none
+Strep Throat,Moderate,severe sore throat,fever,swollen lymph nodes,none,none,none,10,Female,7,none
+Allergies,Mild,congestion,itchy eyes,mild cough,sneezing,runny nose,none,59,Male,9,asthma
+Influenza,Mild,high fever,fatigue,chills,none,none,none,7,Male,10,none
+Allergies,Severe,congestion,runny nose,mild cough,itchy eyes,sneezing,none,80,Male,3,hypertension
+Pneumonia,Severe,chest pain,fatigue,shortness of breath,none,none,none,81,Male,2,diabetes
+Migraine,Severe,visual disturbance,severe headache,light sensitivity,nausea,none,none,33,Male,6,diabetes
+Strep Throat,Severe,headache,severe sore throat,difficulty swallowing,none,none,none,68,Male,2,hypertension
+Influenza,Moderate,fatigue,headache,chills,high fever,none,none,29,Female,1,asthma
+Allergies,Mild,itchy eyes,mild cough,congestion,sneezing,none,none,69,Male,11,none
+Allergies,Moderate,runny nose,itchy eyes,sneezing,congestion,mild cough,none,44,Female,4,heart disease
+Gastroenteritis,Mild,dehydration,diarrhea,abdominal pain,nausea,fever,vomiting,70,Female,1,hypertension
+Bronchitis,Mild,mucus production,persistent cough,mild fever,fatigue,chest discomfort,none,6,Female,9,diabetes
+Influenza,Moderate,severe cough,fatigue,high fever,body ache,chills,none,24,Male,13,hypertension
+Influenza,Moderate,headache,severe cough,chills,none,none,none,71,Male,1,diabetes
+COVID-19,Moderate,fatigue,dry cough,loss of smell,loss of taste,shortness of breath,fever,26,Male,13,diabetes
+Allergies,Mild,runny nose,congestion,itchy eyes,sneezing,mild cough,none,37,Female,8,none
+Influenza,Severe,severe cough,chills,body ache,high fever,headache,fatigue,51,Female,9,asthma
+Gastroenteritis,Moderate,nausea,dehydration,diarrhea,abdominal pain,fever,vomiting,40,Male,5,heart disease
+Urinary Tract Infection,Mild,abdominal pain,fever,cloudy urine,frequent urination,none,none,73,Female,7,hypertension
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,severe sore throat,fever,none,none,37,Male,5,none
+Urinary Tract Infection,Mild,abdominal pain,cloudy urine,fever,burning sensation,frequent urination,none,23,Male,7,none
+Influenza,Moderate,fatigue,headache,body ache,severe cough,high fever,none,65,Female,1,none
+Allergies,Severe,itchy eyes,mild cough,sneezing,runny nose,congestion,none,15,Male,10,asthma
+Common Cold,Mild,runny nose,mild fever,sore throat,sneezing,mild cough,none,25,Female,11,none
+Common Cold,Moderate,mild fever,sore throat,mild cough,sneezing,runny nose,none,13,Female,5,diabetes
+COVID-19,Mild,dry cough,loss of smell,fatigue,loss of taste,fever,shortness of breath,51,Male,13,none
+Strep Throat,Mild,headache,severe sore throat,swollen lymph nodes,fever,none,none,21,Female,8,heart disease
+Strep Throat,Moderate,swollen lymph nodes,severe sore throat,difficulty swallowing,fever,headache,none,36,Female,2,asthma
+Bronchitis,Mild,fatigue,mucus production,mild fever,chest discomfort,none,none,58,Female,6,hypertension
+Bronchitis,Moderate,mucus production,persistent cough,chest discomfort,fatigue,mild fever,none,23,Female,11,none
+Influenza,Moderate,high fever,headache,severe cough,chills,fatigue,none,54,Female,7,none
+COVID-19,Moderate,fatigue,shortness of breath,fever,loss of taste,dry cough,none,59,Female,2,diabetes
+Strep Throat,Moderate,difficulty swallowing,headache,swollen lymph nodes,fever,severe sore throat,none,71,Male,7,diabetes
+Gastroenteritis,Moderate,dehydration,nausea,abdominal pain,none,none,none,25,Female,4,none
+Influenza,Moderate,high fever,severe cough,body ache,fatigue,chills,none,39,Male,5,asthma
+Common Cold,Mild,sneezing,mild fever,sore throat,runny nose,mild cough,none,10,Female,3,none
+Influenza,Severe,chills,body ache,severe cough,fatigue,none,none,48,Female,1,diabetes
+Allergies,Mild,congestion,mild cough,sneezing,runny nose,itchy eyes,none,38,Female,11,none
+Migraine,Mild,visual disturbance,light sensitivity,severe headache,none,none,none,75,Male,5,none
+Allergies,Mild,congestion,runny nose,sneezing,mild cough,none,none,82,Female,12,diabetes
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,fever,severe sore throat,none,none,53,Female,8,none
+Strep Throat,Moderate,swollen lymph nodes,severe sore throat,fever,none,none,none,43,Female,7,asthma
+Bronchitis,Mild,persistent cough,mild fever,fatigue,mucus production,none,none,11,Female,12,diabetes
+Strep Throat,Severe,severe sore throat,difficulty swallowing,headache,fever,none,none,11,Male,13,heart disease
+Influenza,Mild,fatigue,headache,chills,high fever,none,none,49,Female,9,none
+Urinary Tract Infection,Mild,cloudy urine,frequent urination,burning sensation,fever,abdominal pain,none,23,Male,12,none
+Common Cold,Mild,runny nose,sore throat,mild fever,mild cough,sneezing,none,79,Female,2,diabetes
+Allergies,Mild,runny nose,congestion,sneezing,mild cough,itchy eyes,none,77,Male,2,asthma
+Strep Throat,Moderate,headache,difficulty swallowing,severe sore throat,fever,none,none,10,Female,8,none
+Common Cold,Mild,mild fever,mild cough,sneezing,runny nose,sore throat,none,21,Female,8,none
+Influenza,Severe,headache,high fever,fatigue,none,none,none,29,Male,12,none
+Migraine,Moderate,light sensitivity,severe headache,visual disturbance,nausea,none,none,43,Male,3,none
+Allergies,Mild,sneezing,mild cough,runny nose,itchy eyes,congestion,none,21,Male,4,none
+Urinary Tract Infection,Moderate,burning sensation,abdominal pain,cloudy urine,none,none,none,73,Female,6,heart disease
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,cloudy urine,none,none,none,14,Male,1,none
+Strep Throat,Moderate,difficulty swallowing,fever,swollen lymph nodes,none,none,none,40,Male,5,heart disease
+Gastroenteritis,Mild,fever,diarrhea,vomiting,dehydration,abdominal pain,nausea,81,Female,6,none
+Pneumonia,Severe,shortness of breath,chest pain,severe cough,high fever,fatigue,none,16,Male,11,none
+Strep Throat,Severe,headache,fever,severe sore throat,swollen lymph nodes,none,none,81,Male,7,diabetes
+Migraine,Moderate,light sensitivity,visual disturbance,nausea,severe headache,none,none,32,Female,11,none
+Migraine,Moderate,visual disturbance,light sensitivity,nausea,severe headache,none,none,27,Female,11,none
+Gastroenteritis,Mild,diarrhea,nausea,vomiting,none,none,none,17,Female,11,diabetes
+COVID-19,Mild,loss of smell,fatigue,fever,dry cough,loss of taste,none,12,Male,4,none
+Common Cold,Moderate,runny nose,mild cough,sneezing,mild fever,none,none,12,Male,12,none
+Common Cold,Moderate,mild fever,sore throat,runny nose,sneezing,mild cough,none,21,Female,3,none
+Migraine,Severe,visual disturbance,light sensitivity,severe headache,nausea,none,none,35,Female,12,none
+Common Cold,Mild,mild fever,sore throat,sneezing,mild cough,runny nose,none,22,Male,6,none
+Pneumonia,Moderate,high fever,severe cough,shortness of breath,fatigue,chest pain,none,20,Female,9,none
+Strep Throat,Mild,headache,swollen lymph nodes,severe sore throat,difficulty swallowing,fever,none,74,Male,4,asthma
+Urinary Tract Infection,Moderate,fever,cloudy urine,burning sensation,frequent urination,none,none,12,Male,4,diabetes
+Gastroenteritis,Moderate,nausea,abdominal pain,fever,none,none,none,58,Female,2,diabetes
+Strep Throat,Mild,difficulty swallowing,swollen lymph nodes,fever,none,none,none,38,Male,12,none
+Common Cold,Mild,sore throat,runny nose,mild fever,mild cough,sneezing,none,63,Female,11,none
+Gastroenteritis,Moderate,fever,nausea,abdominal pain,dehydration,diarrhea,vomiting,51,Female,4,none
+Migraine,Moderate,light sensitivity,visual disturbance,severe headache,nausea,none,none,57,Male,3,none
+Migraine,Mild,visual disturbance,severe headache,light sensitivity,nausea,none,none,16,Male,10,none
+Gastroenteritis,Mild,diarrhea,vomiting,fever,none,none,none,29,Male,10,none
+Gastroenteritis,Mild,dehydration,abdominal pain,fever,none,none,none,61,Male,7,hypertension
+Bronchitis,Mild,mild fever,fatigue,mucus production,chest discomfort,persistent cough,none,66,Male,2,hypertension
+Urinary Tract Infection,Moderate,cloudy urine,frequent urination,fever,abdominal pain,burning sensation,none,20,Male,13,none
+Bronchitis,Mild,persistent cough,mucus production,fatigue,mild fever,chest discomfort,none,70,Male,11,none
+Strep Throat,Moderate,headache,difficulty swallowing,swollen lymph nodes,fever,severe sore throat,none,70,Male,4,diabetes
+Common Cold,Severe,mild cough,sore throat,sneezing,none,none,none,69,Male,6,diabetes
+Common Cold,Mild,mild cough,sneezing,sore throat,none,none,none,82,Male,11,asthma
+Pneumonia,Severe,high fever,fatigue,shortness of breath,none,none,none,6,Male,6,asthma
+Pneumonia,Moderate,high fever,chest pain,fatigue,severe cough,none,none,30,Male,7,diabetes
+Migraine,Moderate,light sensitivity,nausea,visual disturbance,severe headache,none,none,20,Female,4,none
+Migraine,Severe,nausea,visual disturbance,severe headache,light sensitivity,none,none,83,Female,12,asthma
+Allergies,Mild,runny nose,mild cough,congestion,itchy eyes,none,none,81,Male,9,asthma
+Migraine,Moderate,nausea,severe headache,visual disturbance,light sensitivity,none,none,52,Male,12,none
+Common Cold,Mild,sneezing,mild cough,sore throat,mild fever,runny nose,none,79,Male,9,asthma
+Strep Throat,Severe,headache,severe sore throat,fever,difficulty swallowing,swollen lymph nodes,none,62,Male,13,diabetes
+Common Cold,Mild,mild cough,sore throat,runny nose,mild fever,none,none,83,Female,8,heart disease
+Allergies,Severe,congestion,mild cough,sneezing,none,none,none,62,Female,6,heart disease
+Strep Throat,Severe,difficulty swallowing,severe sore throat,headache,swollen lymph nodes,none,none,45,Female,8,none
+Gastroenteritis,Mild,dehydration,diarrhea,fever,none,none,none,47,Male,6,none
+Pneumonia,Severe,shortness of breath,severe cough,high fever,fatigue,chest pain,none,75,Male,2,hypertension
+Urinary Tract Infection,Mild,abdominal pain,frequent urination,cloudy urine,fever,burning sensation,none,42,Female,10,none
+Common Cold,Moderate,sore throat,mild fever,sneezing,mild cough,none,none,25,Female,4,none
+Allergies,Mild,mild cough,itchy eyes,congestion,sneezing,runny nose,none,18,Female,5,diabetes
+Gastroenteritis,Severe,nausea,diarrhea,abdominal pain,none,none,none,79,Male,3,hypertension
+Bronchitis,Mild,persistent cough,chest discomfort,mild fever,none,none,none,47,Male,4,none
+Strep Throat,Mild,severe sore throat,headache,difficulty swallowing,fever,none,none,46,Female,10,none
+Migraine,Moderate,severe headache,light sensitivity,visual disturbance,none,none,none,75,Female,11,hypertension
+Influenza,Moderate,body ache,severe cough,fatigue,headache,none,none,44,Male,4,none
+Allergies,Mild,congestion,sneezing,itchy eyes,runny nose,none,none,52,Female,7,none
+Common Cold,Mild,runny nose,sneezing,sore throat,mild cough,mild fever,none,68,Female,6,hypertension
+Common Cold,Moderate,mild cough,runny nose,sneezing,mild fever,none,none,28,Female,4,none
+Urinary Tract Infection,Severe,fever,cloudy urine,abdominal pain,none,none,none,37,Female,3,none
+COVID-19,Moderate,loss of taste,loss of smell,shortness of breath,none,none,none,19,Male,9,none
+Strep Throat,Mild,headache,difficulty swallowing,swollen lymph nodes,fever,none,none,29,Male,9,asthma
+Influenza,Mild,body ache,severe cough,headache,chills,fatigue,none,74,Male,2,none
+Strep Throat,Mild,difficulty swallowing,fever,severe sore throat,headache,none,none,40,Female,5,none
+Allergies,Mild,sneezing,congestion,runny nose,mild cough,itchy eyes,none,14,Female,7,none
+Gastroenteritis,Severe,diarrhea,vomiting,dehydration,none,none,none,38,Female,1,none
+Strep Throat,Moderate,difficulty swallowing,fever,headache,severe sore throat,none,none,19,Male,12,none
+Common Cold,Mild,mild cough,sore throat,mild fever,none,none,none,65,Male,1,heart disease
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,fever,severe sore throat,headache,none,34,Male,1,none
+Urinary Tract Infection,Severe,fever,abdominal pain,burning sensation,frequent urination,none,none,13,Female,7,none
+Influenza,Moderate,high fever,severe cough,fatigue,headache,chills,none,20,Female,1,none
+Influenza,Moderate,high fever,severe cough,body ache,none,none,none,23,Male,6,none
+Bronchitis,Mild,mild fever,mucus production,persistent cough,fatigue,chest discomfort,none,78,Female,10,asthma
+COVID-19,Mild,loss of taste,shortness of breath,fatigue,fever,loss of smell,none,21,Male,13,none
+Allergies,Moderate,mild cough,sneezing,runny nose,itchy eyes,congestion,none,75,Female,8,none
+COVID-19,Mild,fatigue,loss of smell,loss of taste,fever,shortness of breath,none,70,Female,9,none
+COVID-19,Severe,fever,loss of taste,dry cough,none,none,none,45,Female,2,asthma
+Allergies,Mild,congestion,itchy eyes,sneezing,mild cough,runny nose,none,78,Male,4,asthma
+Strep Throat,Moderate,severe sore throat,headache,swollen lymph nodes,difficulty swallowing,fever,none,84,Male,2,heart disease
+Urinary Tract Infection,Mild,frequent urination,fever,abdominal pain,burning sensation,cloudy urine,none,58,Male,10,asthma
+Strep Throat,Moderate,swollen lymph nodes,fever,severe sore throat,headache,difficulty swallowing,none,76,Female,8,heart disease
+COVID-19,Severe,loss of taste,dry cough,fatigue,loss of smell,fever,shortness of breath,66,Female,5,diabetes
+Pneumonia,Severe,shortness of breath,severe cough,chest pain,high fever,fatigue,none,8,Male,12,none
+Bronchitis,Moderate,mucus production,persistent cough,mild fever,fatigue,chest discomfort,none,8,Female,9,none
+Strep Throat,Mild,swollen lymph nodes,headache,fever,severe sore throat,none,none,81,Male,10,asthma
+Influenza,Moderate,fatigue,severe cough,high fever,body ache,none,none,19,Female,1,none
+Influenza,Severe,headache,body ache,high fever,none,none,none,82,Female,11,heart disease
+Common Cold,Mild,mild fever,sore throat,mild cough,sneezing,runny nose,none,27,Female,1,none
+Gastroenteritis,Moderate,nausea,diarrhea,dehydration,fever,vomiting,none,48,Male,13,none
+Urinary Tract Infection,Moderate,cloudy urine,fever,burning sensation,abdominal pain,frequent urination,none,76,Male,9,none
+Gastroenteritis,Severe,dehydration,diarrhea,vomiting,none,none,none,65,Male,1,hypertension
+Allergies,Mild,congestion,sneezing,itchy eyes,runny nose,none,none,14,Male,7,none
+Urinary Tract Infection,Moderate,burning sensation,cloudy urine,fever,frequent urination,abdominal pain,none,19,Male,5,asthma
+Pneumonia,Moderate,fatigue,shortness of breath,chest pain,none,none,none,6,Male,7,diabetes
+Urinary Tract Infection,Moderate,frequent urination,burning sensation,cloudy urine,none,none,none,42,Female,1,none
+COVID-19,Severe,fever,dry cough,loss of smell,none,none,none,37,Female,4,diabetes
+Urinary Tract Infection,Mild,abdominal pain,frequent urination,burning sensation,cloudy urine,none,none,79,Female,2,none
+Bronchitis,Moderate,mucus production,mild fever,fatigue,persistent cough,chest discomfort,none,77,Female,2,none
+Urinary Tract Infection,Mild,abdominal pain,burning sensation,frequent urination,cloudy urine,fever,none,29,Male,8,none
+Urinary Tract Infection,Mild,fever,burning sensation,frequent urination,cloudy urine,abdominal pain,none,20,Male,2,heart disease
+Common Cold,Mild,sore throat,mild fever,mild cough,runny nose,none,none,84,Female,13,diabetes
+Gastroenteritis,Mild,nausea,abdominal pain,dehydration,fever,vomiting,none,76,Female,7,heart disease
+Bronchitis,Moderate,chest discomfort,mucus production,mild fever,persistent cough,none,none,68,Female,4,hypertension
+Influenza,Moderate,body ache,high fever,chills,fatigue,headache,severe cough,14,Male,11,hypertension
+Pneumonia,Moderate,chest pain,high fever,fatigue,severe cough,shortness of breath,none,67,Male,13,diabetes
+Allergies,Severe,itchy eyes,mild cough,congestion,runny nose,sneezing,none,78,Female,4,hypertension
+Gastroenteritis,Moderate,abdominal pain,diarrhea,dehydration,fever,none,none,41,Male,3,none
+Bronchitis,Mild,mucus production,persistent cough,mild fever,chest discomfort,fatigue,none,27,Male,13,asthma
+Allergies,Mild,sneezing,congestion,mild cough,runny nose,itchy eyes,none,26,Male,9,none
+Influenza,Mild,high fever,severe cough,headache,fatigue,chills,none,36,Female,10,none
+Urinary Tract Infection,Moderate,abdominal pain,fever,burning sensation,cloudy urine,frequent urination,none,25,Female,4,diabetes
+Urinary Tract Infection,Moderate,abdominal pain,burning sensation,fever,frequent urination,cloudy urine,none,32,Male,5,none
+COVID-19,Moderate,loss of taste,dry cough,fatigue,fever,loss of smell,none,30,Female,12,none
+COVID-19,Moderate,fever,dry cough,shortness of breath,none,none,none,62,Female,13,asthma
+COVID-19,Moderate,fever,loss of smell,shortness of breath,dry cough,loss of taste,none,32,Female,8,none
+Pneumonia,Moderate,chest pain,high fever,shortness of breath,severe cough,none,none,72,Female,9,none
+Influenza,Moderate,headache,severe cough,fatigue,none,none,none,22,Female,1,asthma
+Gastroenteritis,Severe,vomiting,dehydration,diarrhea,fever,nausea,none,60,Male,10,none
+Allergies,Mild,mild cough,runny nose,itchy eyes,congestion,none,none,75,Male,4,none
+Migraine,Mild,visual disturbance,nausea,light sensitivity,severe headache,none,none,10,Female,9,none
+Bronchitis,Moderate,mucus production,fatigue,mild fever,none,none,none,83,Female,13,diabetes
+Strep Throat,Moderate,difficulty swallowing,fever,severe sore throat,headache,none,none,50,Female,2,none
+Common Cold,Mild,mild fever,mild cough,runny nose,none,none,none,64,Male,3,heart disease
+Strep Throat,Mild,severe sore throat,fever,headache,none,none,none,28,Male,5,diabetes
+Gastroenteritis,Severe,dehydration,diarrhea,fever,abdominal pain,nausea,none,54,Female,6,none
+Common Cold,Moderate,mild fever,mild cough,runny nose,sore throat,sneezing,none,79,Female,1,heart disease
+Allergies,Mild,sneezing,runny nose,mild cough,itchy eyes,congestion,none,51,Female,5,asthma
+Influenza,Moderate,severe cough,fatigue,high fever,headache,chills,body ache,17,Male,1,none
+Allergies,Mild,mild cough,congestion,itchy eyes,none,none,none,45,Female,9,none
+Migraine,Moderate,visual disturbance,nausea,severe headache,none,none,none,10,Male,1,none
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,headache,severe sore throat,none,none,54,Female,9,asthma
+Pneumonia,Severe,high fever,shortness of breath,chest pain,none,none,none,54,Female,1,diabetes
+Strep Throat,Mild,difficulty swallowing,headache,fever,swollen lymph nodes,severe sore throat,none,28,Male,6,none
+Influenza,Moderate,severe cough,headache,body ache,none,none,none,19,Female,3,asthma
+Strep Throat,Moderate,severe sore throat,headache,swollen lymph nodes,none,none,none,36,Female,9,asthma
+COVID-19,Mild,fever,loss of smell,loss of taste,none,none,none,35,Male,4,none
+Allergies,Mild,mild cough,runny nose,itchy eyes,congestion,sneezing,none,26,Male,11,none
+Bronchitis,Mild,chest discomfort,mucus production,fatigue,mild fever,none,none,23,Female,1,none
+Allergies,Mild,mild cough,congestion,sneezing,itchy eyes,runny nose,none,41,Female,1,none
+Bronchitis,Mild,mucus production,chest discomfort,mild fever,none,none,none,6,Female,12,none
+Strep Throat,Moderate,swollen lymph nodes,difficulty swallowing,fever,none,none,none,17,Male,7,hypertension
+Allergies,Mild,mild cough,congestion,itchy eyes,sneezing,runny nose,none,79,Male,1,none
+Common Cold,Mild,runny nose,mild cough,sneezing,sore throat,none,none,57,Male,3,asthma
+Strep Throat,Moderate,headache,difficulty swallowing,swollen lymph nodes,severe sore throat,none,none,16,Male,6,none
+Bronchitis,Mild,persistent cough,mucus production,fatigue,mild fever,chest discomfort,none,61,Male,7,hypertension
+Gastroenteritis,Moderate,vomiting,dehydration,diarrhea,none,none,none,47,Female,3,asthma
+Strep Throat,Moderate,severe sore throat,fever,difficulty swallowing,swollen lymph nodes,headache,none,55,Male,4,none
+COVID-19,Mild,loss of smell,fatigue,loss of taste,fever,none,none,63,Female,1,none
+Bronchitis,Mild,mild fever,mucus production,chest discomfort,persistent cough,fatigue,none,8,Male,2,none
+Allergies,Mild,runny nose,mild cough,sneezing,congestion,itchy eyes,none,25,Male,11,asthma
+Strep Throat,Moderate,severe sore throat,swollen lymph nodes,headache,none,none,none,33,Male,7,none
+Common Cold,Mild,runny nose,sore throat,mild cough,sneezing,mild fever,none,82,Male,9,diabetes
+Common Cold,Mild,sneezing,mild fever,mild cough,none,none,none,37,Male,13,none
+Urinary Tract Infection,Mild,fever,abdominal pain,burning sensation,cloudy urine,frequent urination,none,81,Male,11,hypertension
+Influenza,Moderate,chills,body ache,high fever,none,none,none,73,Female,3,none
+Gastroenteritis,Mild,abdominal pain,vomiting,diarrhea,nausea,fever,dehydration,60,Male,7,none
+Common Cold,Mild,runny nose,sneezing,mild cough,sore throat,mild fever,none,73,Male,9,diabetes
+Influenza,Severe,headache,chills,severe cough,fatigue,none,none,37,Male,8,none
+Bronchitis,Mild,persistent cough,chest discomfort,fatigue,none,none,none,46,Female,1,none
+COVID-19,Severe,shortness of breath,loss of smell,fatigue,fever,dry cough,loss of taste,82,Male,3,heart disease
+Influenza,Mild,chills,fatigue,severe cough,body ache,headache,high fever,23,Male,6,none
+Bronchitis,Mild,mild fever,persistent cough,mucus production,fatigue,chest discomfort,none,6,Male,4,none
+Strep Throat,Severe,fever,difficulty swallowing,headache,none,none,none,7,Male,3,none
+Migraine,Mild,nausea,light sensitivity,severe headache,visual disturbance,none,none,31,Male,4,none
+Strep Throat,Mild,difficulty swallowing,swollen lymph nodes,headache,severe sore throat,fever,none,16,Male,8,none
+Urinary Tract Infection,Severe,abdominal pain,frequent urination,cloudy urine,burning sensation,none,none,60,Female,1,none
+Pneumonia,Severe,fatigue,chest pain,high fever,severe cough,shortness of breath,none,23,Male,6,diabetes
+Urinary Tract Infection,Mild,burning sensation,abdominal pain,cloudy urine,fever,frequent urination,none,22,Male,11,none
+Allergies,Mild,mild cough,sneezing,runny nose,none,none,none,58,Male,8,diabetes
+Urinary Tract Infection,Moderate,frequent urination,burning sensation,fever,abdominal pain,none,none,37,Male,2,none
+Gastroenteritis,Mild,abdominal pain,fever,vomiting,diarrhea,nausea,dehydration,36,Female,6,heart disease
+Pneumonia,Severe,high fever,chest pain,fatigue,none,none,none,17,Female,8,none
+Urinary Tract Infection,Moderate,cloudy urine,burning sensation,fever,frequent urination,abdominal pain,none,13,Male,2,none
+Gastroenteritis,Severe,dehydration,diarrhea,vomiting,nausea,fever,none,18,Male,7,none
+Influenza,Severe,chills,high fever,fatigue,none,none,none,45,Female,7,none
+Allergies,Mild,congestion,mild cough,runny nose,itchy eyes,sneezing,none,56,Female,8,diabetes
+Allergies,Mild,runny nose,sneezing,itchy eyes,mild cough,congestion,none,8,Male,13,none
+Urinary Tract Infection,Mild,abdominal pain,burning sensation,fever,frequent urination,cloudy urine,none,23,Female,5,none
+Bronchitis,Moderate,mucus production,mild fever,chest discomfort,persistent cough,fatigue,none,47,Female,8,none
+Strep Throat,Mild,difficulty swallowing,fever,swollen lymph nodes,headache,severe sore throat,none,7,Male,7,none
+Migraine,Mild,light sensitivity,visual disturbance,nausea,severe headache,none,none,47,Male,12,none
+Common Cold,Mild,mild fever,mild cough,runny nose,none,none,none,40,Male,1,none
+COVID-19,Mild,shortness of breath,loss of taste,fatigue,none,none,none,82,Male,7,hypertension
+Pneumonia,Severe,severe cough,chest pain,fatigue,high fever,shortness of breath,none,13,Male,13,none
+Allergies,Moderate,sneezing,runny nose,mild cough,itchy eyes,none,none,65,Male,3,asthma
+COVID-19,Moderate,fever,loss of taste,loss of smell,none,none,none,59,Male,11,none
+Allergies,Mild,congestion,runny nose,sneezing,mild cough,itchy eyes,none,74,Male,5,asthma
+COVID-19,Mild,loss of taste,fatigue,dry cough,fever,loss of smell,shortness of breath,36,Female,9,none
+Pneumonia,Moderate,high fever,severe cough,shortness of breath,chest pain,fatigue,none,80,Male,4,diabetes
+Allergies,Severe,mild cough,itchy eyes,congestion,none,none,none,22,Female,2,asthma
+Migraine,Severe,severe headache,nausea,visual disturbance,none,none,none,75,Male,2,hypertension
+Gastroenteritis,Moderate,dehydration,vomiting,abdominal pain,diarrhea,fever,none,26,Male,13,none
+Strep Throat,Moderate,headache,swollen lymph nodes,severe sore throat,fever,difficulty swallowing,none,49,Male,10,none
+Migraine,Mild,visual disturbance,nausea,light sensitivity,severe headache,none,none,27,Male,6,none
+Bronchitis,Severe,chest discomfort,mucus production,persistent cough,none,none,none,7,Male,4,heart disease
+Allergies,Mild,congestion,runny nose,itchy eyes,mild cough,none,none,28,Male,9,none

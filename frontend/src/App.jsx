@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ClerkProvider } from '@clerk/clerk-react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -16,7 +17,16 @@ import './index.css';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
-    const { isAuthenticated } = useAuth();
+    const { isAuthenticated, loading } = useAuth();
+    
+    if (loading) {
+        return (
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+            </div>
+        );
+    }
+    
     return isAuthenticated ? children : <Navigate to="/login" />;
 };
 
@@ -26,8 +36,8 @@ function AppRoutes() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/login/*" element={<Login />} />
+                <Route path="/register/*" element={<Register />} />
                 <Route path="/analytics" element={<Analytics />} />
                 <Route
                     path="/check"
@@ -82,13 +92,26 @@ function AppRoutes() {
     );
 }
 
+const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+
 function App() {
+    if (!clerkPubKey) {
+        return (
+            <div style={{ color: 'white', padding: '20px' }}>
+                <h1>Configuration Error</h1>
+                <p>Missing Clerk Publishable Key in .env</p>
+            </div>
+        );
+    }
+
     return (
-        <Router>
-            <AuthProvider>
-                <AppRoutes />
-            </AuthProvider>
-        </Router>
+        <ClerkProvider publishableKey={clerkPubKey}>
+            <Router>
+                <AuthProvider>
+                    <AppRoutes />
+                </AuthProvider>
+            </Router>
+        </ClerkProvider>
     );
 }
 

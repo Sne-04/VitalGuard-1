@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
-import api from '../services/api';
+import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useUser, useAuth as useClerkAuth, useClerk } from '@clerk/clerk-react';
 
 const AuthContext = createContext();
 
@@ -12,88 +12,48 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
+    const { user, isLoaded: isUserLoaded } = useUser();
+    const { getToken, isLoaded: isAuthLoaded, isSignedIn } = useClerkAuth();
+    const { signOut } = useClerk();
+
     const [token, setToken] = useState(localStorage.getItem('token'));
-    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        if (isSignedIn) {
+            getToken().then(setToken);
+        } else {
+            setToken(null);
+        }
+    }, [isSignedIn, getToken]);
+
+    const loading = !isUserLoaded || !isAuthLoaded;
+
+    const mappedUser = user ? {
+        id: user.id,
+        _id: user.id,
+        name: user.fullName || user.firstName || 'User',
+        email: user.primaryEmailAddress?.emailAddress,
+        age: 30, // Default for now
+        gender: 'Not specified',
+        medicalHistory: { comorbidities: [], allergies: [], currentMedications: [] }
+    } : null;
 
     useEffect(() => {
         if (token) {
-            fetchUser();
+            localStorage.setItem('token', token);
         } else {
-            setLoading(false);
+            localStorage.removeItem('token');
         }
     }, [token]);
 
-    const fetchUser = async () => {
-        try {
-            const response = await api.get('/auth/me');
-            if (response.data.success) {
-                setUser(response.data.user);
-            } else {
-                logout();
-            }
-        } catch (error) {
-            console.error('Error fetching user:', error);
-            logout();
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    const register = async (userData) => {
-        try {
-            console.log('📝 Registering user:', userData.email);
-            const response = await api.post('/auth/register', userData);
-
-            console.log('✅ Registration response:', response.data);
-
-            if (response.data.success) {
-                const { token: newToken, user: newUser } = response.data;
-                localStorage.setItem('token', newToken);
-                setToken(newToken);
-                setUser(newUser);
-                return response.data;
-            }
-        } catch (error) {
-            console.error('❌ Registration error:', error.response?.data || error.message);
-            throw error;
-        }
-    };
-
-    const login = async (email, password) => {
-        try {
-            console.log('🔐 Logging in:', email);
-            const response = await api.post('/auth/login', { email, password });
-
-            console.log('✅ Login response:', response.data);
-
-            if (response.data.success) {
-                const { token: newToken, user: newUser } = response.data;
-                localStorage.setItem('token', newToken);
-                setToken(newToken);
-                setUser(newUser);
-                return response.data;
-            }
-        } catch (error) {
-            console.error('❌ Login error:', error.response?.data || error.message);
-            throw error;
-        }
-    };
-
-    const logout = () => {
-        localStorage.removeItem('token');
-        setToken(null);
-        setUser(null);
-    };
-
     const value = {
-        user,
+        user: mappedUser,
         token,
-        isAuthenticated: !!user,
+        isAuthenticated: !!isSignedIn,
         loading,
-        register,
-        login,
-        logout
+        logout: signOut,
+        login: () => {}, // Handled by Clerk
+        register: () => {} // Handled by Clerk
     };
 
     return (

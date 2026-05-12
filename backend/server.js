@@ -3,19 +3,22 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-const supabase = require('./config/supabase');
+const db = require('./config/db');
 
 // Initialize Express app
 const app = express();
 
-// Check Supabase connection on startup
-supabase.from('users').select('count', { count: 'exact', head: true })
+// Check NeonDB connection on startup
+db.from('users').select('count', { count: 'exact', head: true })
     .then(({ error }) => {
         if (error) {
-            console.error(`❌ Supabase connection error: ${error.message}`);
+            console.error(`❌ NeonDB connection error: ${error.message}`);
         } else {
-            console.log('✅ Supabase Connected');
+            console.log('✅ NeonDB Connected');
         }
+    })
+    .catch((err) => {
+        console.error(`❌ NeonDB network error: ${err.message}`);
     });
 
 // Middleware
@@ -51,7 +54,6 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 
 // Routes
-app.use('/api/auth', require('./routes/auth'));
 app.use('/api/predict', require('./routes/prediction'));
 app.use('/api/vitals', require('./routes/vitals'));
 app.use('/api/image-analysis', require('./routes/imageAnalysis'));
@@ -63,7 +65,7 @@ app.get('/health', (req, res) => {
     res.status(200).json({
         success: true,
         message: 'VitalGuard API is running',
-        db: 'Supabase (PostgreSQL)',
+        db: 'NeonDB (PostgreSQL)',
         timestamp: new Date().toISOString()
     });
 });
@@ -74,7 +76,7 @@ app.get('/', (req, res) => {
         name: 'VitalGuard AI API',
         version: '1.0.0',
         description: 'Advanced ML-Powered Health Assistant',
-        database: 'Supabase',
+        database: 'NeonDB',
         endpoints: {
             auth: '/api/auth',
             predictions: '/api/predict',

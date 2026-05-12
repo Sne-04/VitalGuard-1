@@ -134,8 +134,8 @@ const Analytics = () => {
             title: { display: true, text: title, color: '#fff', font: { size: 14, weight: 'bold' } }
         },
         scales: {
-            y: { beginAtZero: true, ticks: { color: '#6b7280' }, grid: { color: 'rgba(255,255,255,0.05)' } },
-            x: { ticks: { color: '#6b7280', maxRotation: 45 }, grid: { color: 'rgba(255,255,255,0.05)' } }
+            y: { beginAtZero: true, ticks: { color: '#9ca3af' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            x: { ticks: { color: '#9ca3af', maxRotation: 45 }, grid: { color: 'rgba(255,255,255,0.05)' } }
         }
     });
 

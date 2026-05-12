@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const { protect } = require('../middleware/auth');
-const supabase = require('../config/supabase');
+const db = require('../config/db');
 
 // @route   POST /api/vitals
 // @access  Private
@@ -27,7 +27,7 @@ router.post('/', protect, [
             status = 'warning';
         }
 
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('vitals')
             .insert({
                 user_id: req.user.id,
@@ -55,7 +55,7 @@ router.post('/', protect, [
 // @access  Private
 router.get('/latest', protect, async (req, res) => {
     try {
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('vitals')
             .select('*')
             .eq('user_id', req.user.id)
@@ -75,7 +75,7 @@ router.get('/history', protect, async (req, res) => {
     try {
         const limit = parseInt(req.query.limit) || 50;
 
-        const { data, error } = await supabase
+        const { data, error } = await db
             .from('vitals')
             .select('*')
             .eq('user_id', req.user.id)
