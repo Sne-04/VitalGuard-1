@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use the environment variable for API URL
-const API_URL = '/api';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 console.log('🔧 API Configuration:', { API_URL, env: import.meta.env.VITE_API_URL });
 
