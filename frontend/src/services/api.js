@@ -7,9 +7,9 @@ console.log('🔧 API Configuration:', { API_URL, env: import.meta.env.VITE_API_
 
 const api = axios.create({
     baseURL: API_URL,
-    headers: {
-        'Content-Type': 'application/json'
-    }
+    // Do NOT set Content-Type globally — axios will auto-set it correctly:
+    //   'application/json' for plain requests
+    //   'multipart/form-data; boundary=...' for FormData (lab report upload)
 });
 
 // Add request interceptor for debugging
