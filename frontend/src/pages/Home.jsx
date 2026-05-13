@@ -47,7 +47,7 @@ const TEAM = [
         name: 'Sneha Shaw',
         role: 'Full Stack Developer & AI Engineer',
         bio: 'Leads backend architecture and AI integration. Passionate about making healthcare more intelligent and accessible.',
-        image: '/sneha_shaw.png',
+        image: '/sneha_shaw_final.png',
         socials: { github: 'https://github.com/Sne-04', linkedin: 'https://www.linkedin.com/in/sneha-shaw23' },
     },
     {
