@@ -9,7 +9,8 @@ let poolPromise = createPool();
 
 async function createPool() {
     try {
-        const dbUrl = new URL(process.env.DATABASE_URL);
+        const dbUrlStr = process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_fauHTsZAl0V1@ep-snowy-lab-aoaf40z4.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require';
+        const dbUrl = new URL(dbUrlStr);
         const host = dbUrl.hostname;
         
         // Resolve host manually using Google DNS
@@ -30,8 +31,9 @@ async function createPool() {
         });
     } catch (err) {
         console.warn('⚠️ Custom DNS resolution failed, falling back to connectionString:', err.message);
+        const dbUrlStr = process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_fauHTsZAl0V1@ep-snowy-lab-aoaf40z4.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require';
         return new Pool({
-            connectionString: process.env.DATABASE_URL,
+            connectionString: dbUrlStr,
             ssl: { rejectUnauthorized: false }
         });
     }
