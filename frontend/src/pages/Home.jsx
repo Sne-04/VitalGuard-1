@@ -3,126 +3,100 @@ import { Link } from 'react-router-dom';
 import {
     Activity, Shield, Brain, TrendingUp, AlertTriangle,
     Watch, Camera, BarChart3, Beaker, ArrowRight,
-    HeartPulse, Zap, Lock
+    HeartPulse, Zap, Lock, Github, Linkedin, Twitter,
+    Sparkles, ChevronRight
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import DotGrid from '../components/DotGrid';
 
 const ease = [0.16, 1, 0.3, 1];
-
 const fadeUp = (delay = 0) => ({
-    initial: { opacity: 0, y: 24 },
+    initial: { opacity: 0, y: 28 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease, delay }
+    transition: { duration: 0.65, ease, delay },
 });
+const stagger = { hidden:{opacity:0}, show:{opacity:1,transition:{staggerChildren:0.07}} };
+const item = { hidden:{opacity:0,y:20}, show:{opacity:1,y:0,transition:{duration:0.5,ease}} };
 
-const stagger = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { staggerChildren: 0.08 } }
-};
+const FEATURES = [
+    { icon:<TrendingUp className="w-5 h-5"/>, label:'Prediction',     title:'Symptom Progression',   desc:'7-day risk timeline and severity forecasting using ML trained on clinical datasets.',     accent:'#3b82f6' },
+    { icon:<AlertTriangle className="w-5 h-5"/>, label:'Triage',      title:'AI-Based Triage',       desc:'Hospital-grade decision engine: Home Care, Doctor Visit, or Emergency — instantly.',       accent:'#f59e0b' },
+    { icon:<Brain className="w-5 h-5"/>,  label:'Explainability',     title:'SHAP Explainable AI',   desc:'Feature attribution shows exactly why the model reached its prediction.',               accent:'#10b981' },
+    { icon:<Watch className="w-5 h-5"/>,  label:'IoT',                title:'Wearable Integration',  desc:'Sync real-time heart rate, SpO₂ & temperature from any smartwatch or IoT device.',     accent:'#8b5cf6', badge:'New' },
+    { icon:<Camera className="w-5 h-5"/>, label:'Vision',             title:'Image Diagnosis',       desc:'Upload symptom photos for AI computer vision analysis in under 2 seconds.',             accent:'#06b6d4', badge:'New' },
+    { icon:<Beaker className="w-5 h-5"/>, label:'Lab',                title:'Lab Report Analyzer',   desc:'Parse and interpret blood reports with clinical risk flagging and trend detection.',      accent:'#ec4899', badge:'New' },
+    { icon:<BarChart3 className="w-5 h-5"/>, label:'Analytics',       title:'Population Analytics',  desc:'Community health heatmaps, disease trends and epidemiological insight dashboards.',      accent:'#6366f1' },
+    { icon:<Lock className="w-5 h-5"/>,   label:'Security',           title:'Secure & Private',      desc:'Clerk-powered auth, JWT tokens and HIPAA-aware data handling by default.',               accent:'#64748b' },
+];
 
-const item = {
-    hidden: { opacity: 0, y: 20 },
-    show:   { opacity: 1, y: 0, transition: { duration: 0.5, ease } }
-};
+const STATS = [
+    { value:'92.5%', label:'Prediction Accuracy' },
+    { value:'87%',   label:'Severity Classification' },
+    { value:'95%',   label:'Triage Accuracy' },
+    { value:'<2s',   label:'Response Time' },
+];
+
+const STEPS = [
+    { n:'01', title:'Enter Symptoms',   desc:'Type, upload an image, or speak your symptoms to our AI assistant.' },
+    { n:'02', title:'Connect Wearable', desc:'Sync real-time vitals from your smartwatch or IoT health device.'   },
+    { n:'03', title:'AI Analysis',      desc:'ML + Computer Vision models process your data across 8 specialized engines.' },
+    { n:'04', title:'Get Insights',     desc:'Disease prediction, severity score, risk timeline and community trends.' },
+];
+
+const TEAM = [
+    {
+        name: 'Sneha Shaw',
+        role: 'Full Stack Developer & AI Engineer',
+        bio: 'Leads backend architecture and AI integration. Passionate about making healthcare intelligent.',
+        image: '/sneha.png',
+        accent: '#3b82f6',
+        socials: { github: '#', linkedin: '#' },
+    },
+    {
+        name: 'Baishaksi Singha',
+        role: 'ML Engineer & Data Scientist',
+        bio: 'Designs and trains the predictive ML models powering VitalGuard\'s clinical decision engine.',
+        image: '/baishaksi.png',
+        accent: '#8b5cf6',
+        socials: { github: '#', linkedin: '#' },
+    },
+    {
+        name: 'ShrutiKana Patra',
+        role: 'Frontend Developer & UI/UX',
+        bio: 'Crafts premium user experiences that make complex AI insights feel intuitive and accessible.',
+        image: '/shrutikana.png',
+        accent: '#ec4899',
+        socials: { github: '#', linkedin: '#' },
+    },
+];
 
 export default function Home() {
-    const features = [
-        {
-            icon: <TrendingUp className="w-5 h-5" />,
-            label: 'Prediction',
-            title: 'Symptom Progression',
-            description: 'Predict disease severity and 7-day risk timeline with ML models trained on clinical data.',
-            accent: '#3b82f6',
-        },
-        {
-            icon: <AlertTriangle className="w-5 h-5" />,
-            label: 'Triage',
-            title: 'AI-Based Triage',
-            description: 'Hospital-grade decision engine: Home Care, Doctor Visit, or Emergency — instantly.',
-            accent: '#f59e0b',
-        },
-        {
-            icon: <Brain className="w-5 h-5" />,
-            label: 'Explainability',
-            title: 'Explainable AI',
-            description: 'SHAP-powered feature attribution. See exactly why the model reached its conclusion.',
-            accent: '#10b981',
-        },
-        {
-            icon: <Watch className="w-5 h-5" />,
-            label: 'IoT',
-            title: 'Wearable Integration',
-            description: 'Sync real-time vitals — heart rate, SpO₂, temperature — directly from your smartwatch.',
-            accent: '#8b5cf6',
-            badge: 'New',
-        },
-        {
-            icon: <Camera className="w-5 h-5" />,
-            label: 'Vision',
-            title: 'Image Diagnosis',
-            description: 'Upload symptom photos for AI-powered computer vision analysis in seconds.',
-            accent: '#06b6d4',
-            badge: 'New',
-        },
-        {
-            icon: <Beaker className="w-5 h-5" />,
-            label: 'Lab',
-            title: 'Lab Report Analyzer',
-            description: 'Parse and interpret your lab reports with clinical context and risk flagging.',
-            accent: '#ec4899',
-            badge: 'New',
-        },
-        {
-            icon: <BarChart3 className="w-5 h-5" />,
-            label: 'Analytics',
-            title: 'Population Analytics',
-            description: 'Community health trends, disease heatmaps and epidemiological dashboards.',
-            accent: '#6366f1',
-        },
-        {
-            icon: <Lock className="w-5 h-5" />,
-            label: 'Security',
-            title: 'Secure & Private',
-            description: 'Clerk-powered auth, JWT tokens, and HIPAA-aware data handling by default.',
-            accent: '#64748b',
-        },
-    ];
-
-    const stats = [
-        { value: '92.5%', label: 'Prediction Accuracy' },
-        { value: '87%',   label: 'Severity Classification' },
-        { value: '95%',   label: 'Triage Accuracy' },
-        { value: '<2s',   label: 'Average Response Time' },
-    ];
-
-    const steps = [
-        { n: '01', title: 'Enter Symptoms',    desc: 'Type, upload an image, or let AI listen to you' },
-        { n: '02', title: 'Connect Wearable',  desc: 'Sync real-time vitals from any IoT device'       },
-        { n: '03', title: 'AI Analysis',       desc: 'ML + Computer Vision models process your data'   },
-        { n: '04', title: 'Get Insights',      desc: 'Disease, severity, risk timeline & trends'       },
-    ];
-
     return (
         <div className="min-h-screen">
 
-            {/* ── Hero ──────────────────────────────────────────────── */}
-            <section className="relative pt-36 pb-28 px-4 overflow-hidden">
-                {/* Orb decorations */}
-                <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                    <div className="orb orb-blue w-[500px] h-[500px] -top-32 left-1/2 -translate-x-1/2 opacity-20" />
-                    <div className="orb orb-violet w-[350px] h-[350px] top-40 -right-20 opacity-15" style={{ animationDelay: '4s' }} />
-                    <div className="orb orb-teal w-[280px] h-[280px] top-60 -left-16 opacity-10" style={{ animationDelay: '8s' }} />
+            {/* ── HERO ──────────────────────────────────────────── */}
+            <section className="relative pt-36 pb-32 px-4 overflow-hidden" style={{minHeight:'90vh', display:'flex', alignItems:'center'}}>
+
+                {/* 3D Dot Grid */}
+                <div className="absolute inset-0" style={{zIndex:0}}>
+                    <DotGrid />
                 </div>
 
-                {/* Subtle grid overlay */}
-                <div className="absolute inset-0 pointer-events-none"
-                    style={{
-                        backgroundImage: 'linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)',
-                        backgroundSize: '64px 64px'
-                    }}
-                />
+                {/* Orb glows */}
+                <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{zIndex:1}}>
+                    <div className="orb orb-blue   w-[600px] h-[600px] -top-48 left-1/2 -translate-x-1/2" />
+                    <div className="orb orb-violet w-[400px] h-[400px] top-32 -right-24" style={{animationDelay:'5s'}} />
+                    <div className="orb orb-teal   w-[300px] h-[300px] bottom-0 -left-20" style={{animationDelay:'10s'}} />
+                </div>
 
-                <div className="max-w-5xl mx-auto text-center relative z-10">
+                {/* Grid overlay */}
+                <div className="absolute inset-0 pointer-events-none" style={{
+                    zIndex:1,
+                    backgroundImage:'linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)',
+                    backgroundSize:'72px 72px'
+                }}/>
+
+                <div className="max-w-5xl mx-auto text-center relative w-full" style={{zIndex:2}}>
 
                     <motion.div {...fadeUp(0)}>
                         <span className="section-label mb-8 inline-flex">
@@ -132,7 +106,8 @@ export default function Home() {
                     </motion.div>
 
                     <motion.h1
-                        className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.08]"
+                        className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.06] mb-6"
+                        style={{fontFamily:'Sora,sans-serif'}}
                         {...fadeUp(0.1)}
                     >
                         Your health,{' '}
@@ -141,122 +116,150 @@ export default function Home() {
                     </motion.h1>
 
                     <motion.p
-                        className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+                        className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+                        style={{color:'var(--text-secondary)'}}
                         {...fadeUp(0.2)}
                     >
-                        VitalGuard combines machine learning, IoT wearables, and computer vision
-                        to give you hospital-grade health insights — right from your phone.
+                        VitalGuard combines machine learning, IoT wearables and computer vision
+                        to deliver hospital-grade health insights — in seconds, not hours.
                     </motion.p>
 
                     <motion.div className="flex gap-3 justify-center flex-wrap" {...fadeUp(0.3)}>
-                        <Link to="/check" className="btn-primary px-6 py-3 text-[15px]">
+                        <Link to="/check" className="btn-primary px-7 py-3.5 text-[15px] font-semibold">
                             <Activity className="w-4 h-4" />
                             Start Health Check
                             <ArrowRight className="w-4 h-4" />
                         </Link>
-                        <Link to="/lab" className="btn-secondary px-6 py-3 text-[15px]">
-                            <Beaker className="w-4 h-4 text-pink-400" />
+                        <Link to="/lab" className="btn-secondary px-7 py-3.5 text-[15px] font-semibold">
+                            <Beaker className="w-4 h-4" style={{color:'var(--accent)'}} />
                             Analyze Lab Report
                         </Link>
                     </motion.div>
 
-                    {/* Stats Row */}
+                    {/* Trust badges */}
                     <motion.div
-                        className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 max-w-3xl mx-auto"
+                        className="flex items-center justify-center gap-6 mt-10 flex-wrap"
+                        {...fadeUp(0.4)}
+                    >
+                        {['TensorFlow', 'Clerk Auth', 'NeonDB', 'React 18', 'SHAP XAI'].map(t => (
+                            <span key={t} className="text-xs font-medium px-3 py-1 rounded-full"
+                                style={{color:'var(--text-muted)', border:'1px solid var(--border)'}}>
+                                {t}
+                            </span>
+                        ))}
+                    </motion.div>
+
+                    {/* Stats */}
+                    <motion.div
+                        className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-3xl mx-auto"
                         variants={stagger} initial="hidden" animate="show"
                     >
-                        {stats.map((s, i) => (
+                        {STATS.map((s, i) => (
                             <motion.div key={i} variants={item} className="stat-pill">
-                                <div className="text-2xl font-bold text-white mb-0.5">{s.value}</div>
-                                <div className="text-xs text-slate-500 font-medium">{s.label}</div>
+                                <div className="text-2xl font-bold" style={{color:'var(--accent)', fontFamily:'Sora,sans-serif'}}>
+                                    {s.value}
+                                </div>
+                                <div className="text-xs mt-0.5 font-medium" style={{color:'var(--text-muted)'}}>
+                                    {s.label}
+                                </div>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
             </section>
 
-            {/* ── Features ───────────────────────────────────────────── */}
-            <section className="py-24 px-4">
+            {/* ── FEATURES ──────────────────────────────────────── */}
+            <section className="py-28 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="section-label mb-4 inline-flex">
+                        <span className="section-label mb-5 inline-flex">
                             <Zap className="w-3.5 h-3.5" />
                             Capabilities
                         </span>
-                        <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-3">
+                        <h2 className="text-3xl sm:text-4xl font-bold mt-4 mb-3" style={{fontFamily:'Sora,sans-serif'}}>
                             Beyond basic symptom checking
                         </h2>
-                        <p className="text-slate-400 text-base max-w-xl mx-auto">
-                            A full-stack health intelligence platform with eight specialized AI modules.
+                        <p className="text-base max-w-lg mx-auto" style={{color:'var(--text-secondary)'}}>
+                            Eight specialized AI engines working in concert.
                         </p>
                     </div>
 
                     <motion.div
                         className="grid md:grid-cols-2 lg:grid-cols-4 gap-4"
-                        variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true }}
+                        variants={stagger} initial="hidden" whileInView="show" viewport={{once:true}}
                     >
-                        {features.map((f, i) => (
-                            <motion.div key={i} variants={item} className="feature-card group relative overflow-hidden">
-                                {/* Accent line top */}
-                                <div className="absolute top-0 inset-x-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[var(--radius-card)]"
-                                    style={{ background: `linear-gradient(90deg, transparent, ${f.accent}, transparent)` }}
-                                />
+                        {FEATURES.map((f, i) => (
+                            <motion.div key={i} variants={item}
+                                className="feature-card group relative overflow-hidden"
+                            >
+                                {/* Hover accent glow */}
+                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"
+                                    style={{background:`radial-gradient(ellipse at 30% 30%, ${f.accent}12 0%, transparent 70%)`}} />
+
+                                {/* Top accent line */}
+                                <div className="absolute top-0 inset-x-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                    style={{background:`linear-gradient(90deg, transparent, ${f.accent}, transparent)`}} />
 
                                 {f.badge && (
-                                    <span className="absolute top-3 right-3 text-[10px] font-bold px-1.5 py-0.5 rounded-md"
-                                        style={{ background: `${f.accent}22`, color: f.accent, border: `1px solid ${f.accent}44` }}>
+                                    <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded-md"
+                                        style={{background:`${f.accent}20`, color:f.accent, border:`1px solid ${f.accent}40`}}>
                                         {f.badge}
                                     </span>
                                 )}
 
                                 <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4"
-                                    style={{ background: `${f.accent}18`, color: f.accent }}>
+                                    style={{background:`${f.accent}18`, color:f.accent}}>
                                     {f.icon}
                                 </div>
 
-                                <div className="text-[10px] font-semibold uppercase tracking-widest mb-1.5"
-                                    style={{ color: f.accent }}>
+                                <div className="text-[10px] font-bold uppercase tracking-widest mb-1.5"
+                                    style={{color:f.accent}}>
                                     {f.label}
                                 </div>
-                                <h3 className="text-[15px] font-bold text-white mb-2 leading-snug">{f.title}</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">{f.description}</p>
+                                <h3 className="text-[15px] font-bold mb-2">{f.title}</h3>
+                                <p className="text-sm leading-relaxed" style={{color:'var(--text-secondary)'}}>
+                                    {f.desc}
+                                </p>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
             </section>
 
-            {/* ── How It Works ───────────────────────────────────────── */}
-            <section className="py-24 px-4">
+            {/* ── HOW IT WORKS ──────────────────────────────────── */}
+            <section className="py-28 px-4" style={{background:'var(--bg-surface)'}}>
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="section-label mb-4 inline-flex">
+                        <span className="section-label mb-5 inline-flex">
                             <Activity className="w-3.5 h-3.5" />
                             Process
                         </span>
-                        <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4">
-                            How VitalGuard works
+                        <h2 className="text-3xl sm:text-4xl font-bold mt-4" style={{fontFamily:'Sora,sans-serif'}}>
+                            From symptoms to insights
                         </h2>
                     </div>
 
                     <div className="relative">
-                        {/* Connecting line */}
-                        <div className="absolute left-[19px] top-6 bottom-6 w-px bg-gradient-to-b from-blue-500/40 via-violet-500/30 to-transparent hidden sm:block" />
-
-                        <div className="space-y-8">
-                            {steps.map((s, i) => (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: i * 0.12, duration: 0.5, ease }}
+                        <div className="absolute left-5 top-8 bottom-8 w-px"
+                            style={{background:'linear-gradient(180deg, var(--accent) 0%, #7c3aed 60%, transparent 100%)', opacity:0.3}}
+                        />
+                        <div className="space-y-6">
+                            {STEPS.map((s, i) => (
+                                <motion.div key={i}
+                                    initial={{opacity:0, x:-24}}
+                                    whileInView={{opacity:1, x:0}}
+                                    viewport={{once:true}}
+                                    transition={{delay: i * 0.1, duration:0.5, ease}}
                                     className="flex gap-5 items-start"
                                 >
-                                    <div className="step-badge text-sm shrink-0">{s.n}</div>
-                                    <div className="surface-card flex-1 p-5">
-                                        <h3 className="font-semibold text-white text-[15px] mb-1">{s.title}</h3>
-                                        <p className="text-slate-500 text-sm">{s.desc}</p>
+                                    <div className="step-badge">{s.n}</div>
+                                    <div className="surface-card flex-1 px-5 py-4"
+                                        style={{borderRadius:'14px'}}>
+                                        <div className="flex items-center gap-2 mb-1">
+                                            <ChevronRight className="w-4 h-4" style={{color:'var(--accent)'}} />
+                                            <h3 className="font-bold text-[15px]">{s.title}</h3>
+                                        </div>
+                                        <p className="text-sm" style={{color:'var(--text-secondary)'}}>{s.desc}</p>
                                     </div>
                                 </motion.div>
                             ))}
@@ -265,41 +268,110 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── CTA ────────────────────────────────────────────────── */}
-            <section className="py-24 px-4">
+            {/* ── TEAM ──────────────────────────────────────────── */}
+            <section className="py-28 px-4">
+                <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-16">
+                        <span className="section-label mb-5 inline-flex">
+                            <Sparkles className="w-3.5 h-3.5" />
+                            The Team
+                        </span>
+                        <h2 className="text-3xl sm:text-4xl font-bold mt-4 mb-3" style={{fontFamily:'Sora,sans-serif'}}>
+                            Built by passionate engineers
+                        </h2>
+                        <p className="text-base max-w-xl mx-auto" style={{color:'var(--text-secondary)'}}>
+                            A team of AI, ML and product engineers obsessed with making healthcare smarter.
+                        </p>
+                    </div>
+
+                    <motion.div
+                        className="grid md:grid-cols-3 gap-6"
+                        variants={stagger} initial="hidden" whileInView="show" viewport={{once:true}}
+                    >
+                        {TEAM.map((member, i) => (
+                            <motion.div key={i} variants={item} className="team-card group">
+                                {/* Avatar glow ring */}
+                                <div className="relative">
+                                    <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-500 blur-xl"
+                                        style={{background:member.accent, transform:'scale(0.8)'}} />
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="team-avatar relative z-10"
+                                        onError={e => {
+                                            e.target.onerror = null;
+                                            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=${member.accent.slice(1)}&color=fff&size=200`;
+                                        }}
+                                    />
+                                </div>
+
+                                {/* Info */}
+                                <div>
+                                    <h3 className="text-lg font-bold mb-0.5">{member.name}</h3>
+                                    <p className="text-xs font-semibold uppercase tracking-wider mb-3"
+                                        style={{color:member.accent}}>
+                                        {member.role}
+                                    </p>
+                                    <p className="text-sm leading-relaxed" style={{color:'var(--text-secondary)'}}>
+                                        {member.bio}
+                                    </p>
+                                </div>
+
+                                {/* Social links */}
+                                <div className="flex items-center gap-3 mt-1">
+                                    <a href={member.socials.github}
+                                        className="p-2 rounded-lg transition-colors duration-150 hover:scale-110"
+                                        style={{background:'var(--bg-elevated)', color:'var(--text-secondary)'}}
+                                        target="_blank" rel="noopener noreferrer">
+                                        <Github className="w-4 h-4" />
+                                    </a>
+                                    <a href={member.socials.linkedin}
+                                        className="p-2 rounded-lg transition-colors duration-150 hover:scale-110"
+                                        style={{background:'var(--bg-elevated)', color:'var(--text-secondary)'}}
+                                        target="_blank" rel="noopener noreferrer">
+                                        <Linkedin className="w-4 h-4" />
+                                    </a>
+                                </div>
+
+                                {/* Bottom accent */}
+                                <div className="w-full h-0.5 rounded-full mt-1 opacity-30"
+                                    style={{background:`linear-gradient(90deg, transparent, ${member.accent}, transparent)`}} />
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* ── CTA ───────────────────────────────────────────── */}
+            <section className="py-28 px-4">
                 <div className="max-w-3xl mx-auto">
                     <motion.div
-                        initial={{ opacity: 0, y: 32 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, ease }}
-                        className="relative overflow-hidden rounded-2xl border border-blue-500/20 p-12 text-center"
-                        style={{
-                            background: 'linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(139,92,246,0.05) 50%, rgba(6,182,212,0.04) 100%)'
-                        }}
+                        initial={{opacity:0, y:32}}
+                        whileInView={{opacity:1, y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.6, ease}}
+                        className="gradient-border p-12 text-center relative overflow-hidden"
                     >
-                        {/* Glow */}
-                        <div className="absolute inset-0 pointer-events-none">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full"
-                                style={{ background: 'radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%)' }} />
-                        </div>
+                        <div className="absolute inset-0 pointer-events-none"
+                            style={{background:'radial-gradient(ellipse 70% 60% at 50% 50%, var(--accent-glow) 0%, transparent 70%)'}} />
 
                         <div className="relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-blue-600 mx-auto mb-6 flex items-center justify-center shadow-[0_0_32px_rgba(59,130,246,0.5)]">
-                                <HeartPulse className="w-7 h-7 text-white" />
+                            <div className="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center"
+                                style={{background:'var(--accent)', boxShadow:`0 0 40px var(--accent-glow)`}}>
+                                <HeartPulse className="w-8 h-8 text-white" />
                             </div>
-                            <h2 className="text-3xl font-bold text-white mb-3">
+                            <h2 className="text-3xl font-bold mb-3" style={{fontFamily:'Sora,sans-serif'}}>
                                 Ready to check your health?
                             </h2>
-                            <p className="text-slate-400 mb-8 max-w-md mx-auto">
-                                Get AI-powered insights in seconds — from symptom analysis to full lab report interpretation.
+                            <p className="mb-8 max-w-md mx-auto" style={{color:'var(--text-secondary)'}}>
+                                Get AI-powered insights from symptom analysis to full lab report interpretation — free.
                             </p>
                             <div className="flex gap-3 justify-center flex-wrap">
-                                <Link to="/check" className="btn-primary px-7 py-3">
+                                <Link to="/check" className="btn-primary px-7 py-3.5">
                                     <Activity className="w-4 h-4" />
                                     Start Health Check
                                 </Link>
-                                <Link to="/iot-vitals" className="btn-secondary px-7 py-3">
+                                <Link to="/iot-vitals" className="btn-secondary px-7 py-3.5">
                                     <Watch className="w-4 h-4" />
                                     Connect Wearable
                                 </Link>
@@ -309,10 +381,26 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── Footer line ─────────────────────────────────────────── */}
-            <div className="border-t border-white/5 py-8 text-center text-slate-600 text-xs">
-                © 2025 VitalGuard AI · Built with ML, IoT & Computer Vision
-            </div>
+            {/* ── FOOTER ────────────────────────────────────────── */}
+            <footer className="border-t py-8 px-4" style={{borderColor:'var(--border)'}}>
+                <div className="max-w-6xl mx-auto flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 rounded-md flex items-center justify-center"
+                            style={{background:'var(--accent)'}}>
+                            <HeartPulse className="w-3.5 h-3.5 text-white" />
+                        </div>
+                        <span className="text-sm font-semibold">VitalGuard AI</span>
+                    </div>
+                    <p className="text-xs" style={{color:'var(--text-muted)'}}>
+                        © 2025 VitalGuard AI · Built with ML, IoT & Computer Vision
+                    </p>
+                    <div className="flex gap-4 text-xs" style={{color:'var(--text-muted)'}}>
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }

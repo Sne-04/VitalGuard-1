@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ClerkProvider } from '@clerk/clerk-react';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Auth/Login';
@@ -106,11 +107,13 @@ function App() {
 
     return (
         <ClerkProvider publishableKey={clerkPubKey}>
-            <Router>
-                <AuthProvider>
-                    <AppRoutes />
-                </AuthProvider>
-            </Router>
+            <ThemeProvider>
+                <Router>
+                    <AuthProvider>
+                        <AppRoutes />
+                    </AuthProvider>
+                </Router>
+            </ThemeProvider>
         </ClerkProvider>
     );
 }
