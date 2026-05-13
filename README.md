@@ -375,7 +375,7 @@ The application is deployed on a **Vercel + Render** architecture:
 
 ## 📄 Academic Context
 
-- **Project Type:** Final Year B.Tech Project (2024–2025)
+- **Project Type:** Final Year B.Tech Project (2025–2026)
 - **Domain:** Artificial Intelligence, Machine Learning, Healthcare Technology
 - **Technologies:** Full Stack Web Development, ML/AI, IoT, LLMs
 - **Key Contributions:**
