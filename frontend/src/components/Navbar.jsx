@@ -61,10 +61,9 @@ const Navbar = () => {
                             }}>
                             <HeartPulse className="w-4 h-4 text-white" />
                         </div>
-                        <span className="text-[15px] font-bold tracking-tight" style={{fontFamily:'Sora,sans-serif'}}>
-                            <span style={{color:'var(--text-primary)'}}>Vital</span>
-                            <span style={{color:'var(--accent)'}}>Guard</span>
-                            <span style={{color:'var(--text-muted)', fontWeight:400, fontSize:'0.7rem', marginLeft:'2px'}}>AI</span>
+                        <span className="text-[15px] font-bold tracking-tight" style={{fontFamily:'Playfair Display, Georgia, serif'}}>
+                            <span style={{color:'var(--text-primary)'}}>Vital</span><span style={{color:'var(--accent)'}}>Guard</span>
+                            <span style={{color:'var(--text-muted)', fontWeight:400, fontSize:'0.7rem', marginLeft:'3px', fontFamily:'IBM Plex Sans, sans-serif'}}>AI</span>
                         </span>
                     </Link>
 
@@ -107,8 +106,8 @@ const Navbar = () => {
                             <>
                                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg"
                                     style={{background:'var(--bg-glass)', border:'1px solid var(--border)'}}>
-                                    <div className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold text-white"
-                                        style={{background:'linear-gradient(135deg,var(--accent),#7c3aed)'}}>
+                                    <div className="w-6 h-6 flex items-center justify-center text-[10px] font-bold text-white"
+                                        style={{background:'var(--accent)'}}>
                                         {user?.name?.[0]?.toUpperCase() || 'U'}
                                     </div>
                                     <span className="text-sm font-medium max-w-[120px] truncate"
@@ -174,8 +173,8 @@ const Navbar = () => {
                                     <div className="pt-3 mt-2 flex items-center justify-between"
                                         style={{borderTop:'1px solid var(--border)'}}>
                                         <div className="flex items-center gap-2 text-sm" style={{color:'var(--text-secondary)'}}>
-                                            <div className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold text-white"
-                                                style={{background:'linear-gradient(135deg,var(--accent),#7c3aed)'}}>
+                                            <div className="w-6 h-6 flex items-center justify-center text-[10px] font-bold text-white"
+                                                style={{background:'var(--accent)'}}>
                                                 {user?.name?.[0]?.toUpperCase() || 'U'}
                                             </div>
                                             {user?.name}

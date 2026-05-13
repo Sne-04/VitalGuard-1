@@ -82,7 +82,8 @@ const SymptomChecker = () => {
                             Symptom Analysis
                         </span>
                     </div>
-                    <h1 className="text-3xl font-bold text-white mb-2">What are you feeling?</h1>
+                    <h1 className="text-3xl font-bold mb-2"
+                        style={{fontFamily:'Playfair Display, serif'}}>What are you feeling?</h1>
                     <p className="text-slate-400 text-sm">
                         Tell us your symptoms and our AI will assess severity, predict progression, and recommend next steps.
                     </p>
@@ -146,11 +147,7 @@ const SymptomChecker = () => {
                                             key={s}
                                             type="button"
                                             onClick={() => selected ? removeSymptom(s) : addSymptom(s)}
-                                            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 border ${
-                                                selected
-                                                    ? 'bg-blue-500/15 text-blue-400 border-blue-500/30'
-                                                    : 'bg-transparent text-slate-400 border-white/10 hover:border-white/20 hover:text-slate-200'
-                                            }`}
+                                            className={`chip ${symptoms.includes(s) ? 'selected' : ''}`}
                                         >
                                             {selected && <span className="mr-1">✓</span>}
                                             {s}
