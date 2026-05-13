@@ -40,7 +40,7 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
                 scrolled
-                    ? 'bg-[#080c14]/90 backdrop-blur-xl border-b border-white/6 shadow-[0_1px_30px_rgba(0,0,0,0.5)]'
+                    ? 'bg-[#080c14]/90 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_30px_rgba(0,0,0,0.5)]'
                     : 'bg-transparent'
             }`}
         >
@@ -87,7 +87,7 @@ const Navbar = () => {
                         {isAuthenticated ? (
                             <>
                                 {/* User avatar */}
-                                <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/4 border border-white/8">
+                                <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
                                     <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-[10px] font-bold text-white">
                                         {user?.name?.[0]?.toUpperCase() || 'U'}
                                     </div>
@@ -131,7 +131,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.2 }}
-                        className="lg:hidden overflow-hidden border-t border-white/6 bg-[#080c14]/95 backdrop-blur-xl"
+                        className="lg:hidden overflow-hidden border-t border-white/10 bg-[#080c14]/95 backdrop-blur-xl"
                     >
                         <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
                             {isAuthenticated ? (
@@ -151,7 +151,7 @@ const Navbar = () => {
                                             {link.label}
                                         </Link>
                                     ))}
-                                    <div className="pt-3 mt-3 border-t border-white/6 flex items-center justify-between">
+                                    <div className="pt-3 mt-3 border-t border-white/10 flex items-center justify-between">
                                         <div className="flex items-center gap-2 text-slate-400 text-sm">
                                             <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-[10px] font-bold text-white">
                                                 {user?.name?.[0]?.toUpperCase() || 'U'}

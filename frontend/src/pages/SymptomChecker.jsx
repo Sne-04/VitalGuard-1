@@ -149,7 +149,7 @@ const SymptomChecker = () => {
                                             className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 border ${
                                                 selected
                                                     ? 'bg-blue-500/15 text-blue-400 border-blue-500/30'
-                                                    : 'bg-transparent text-slate-400 border-white/8 hover:border-white/20 hover:text-slate-200'
+                                                    : 'bg-transparent text-slate-400 border-white/10 hover:border-white/20 hover:text-slate-200'
                                             }`}
                                         >
                                             {selected && <span className="mr-1">✓</span>}
@@ -167,7 +167,7 @@ const SymptomChecker = () => {
                                     initial={{ opacity: 0, height: 0 }}
                                     animate={{ opacity: 1, height: 'auto' }}
                                     exit={{ opacity: 0, height: 0 }}
-                                    className="pt-4 border-t border-white/6"
+                                    className="pt-4 border-t border-white/10"
                                 >
                                     <p className="text-xs text-slate-500 mb-2.5 font-medium">
                                         Selected · {symptoms.length}
