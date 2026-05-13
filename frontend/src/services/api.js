@@ -14,8 +14,19 @@ const api = axios.create({
 
 // Add request interceptor for debugging
 api.interceptors.request.use(
-    (config) => {
-        const token = localStorage.getItem('token');
+    async (config) => {
+        let token = null;
+        if (window.Clerk && window.Clerk.session) {
+            try {
+                token = await window.Clerk.session.getToken();
+            } catch (err) {
+                console.error("Failed to get fresh Clerk token", err);
+            }
+        }
+        if (!token) {
+            token = localStorage.getItem('token');
+        }
+        
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }

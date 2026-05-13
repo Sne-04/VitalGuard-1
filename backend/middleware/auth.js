@@ -3,6 +3,7 @@ const { createClerkClient } = require('@clerk/clerk-sdk-node');
 const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY });
 
 exports.protect = async (req, res, next) => {
+    console.log(`🛡️ Auth Middleware hit for: ${req.method} ${req.url}`);
     try {
         let token;
         if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
@@ -10,6 +11,7 @@ exports.protect = async (req, res, next) => {
         }
 
         if (!token) {
+            console.log('🛡️ No token found in request');
             return res.status(401).json({ success: false, message: 'Not authorized to access this route' });
         }
 
