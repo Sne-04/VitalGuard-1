@@ -8,7 +8,7 @@ const db = require('../config/db');
 const router = express.Router();
 const upload = multer({
     storage: multer.memoryStorage(),
-    limits: { fileSize: 10 * 1024 * 1024 },
+    limits: { fileSize: 25 * 1024 * 1024 }, // 25 MB
     fileFilter: (req, file, cb) => {
         if (file.mimetype === 'application/pdf') {
             cb(null, true);
@@ -36,7 +36,18 @@ function extractTextFromPDF(buffer) {
     });
 }
 
-router.post('/analyze', protect, upload.single('report'), async (req, res) => {
+router.post('/analyze', protect, (req, res, next) => {
+    // Handle multer errors (file too large, wrong type) before the async handler
+    upload.single('report')(req, res, (multerErr) => {
+        if (multerErr) {
+            if (multerErr.code === 'LIMIT_FILE_SIZE') {
+                return res.status(400).json({ success: false, message: 'File too large. Maximum allowed size is 25 MB.' });
+            }
+            return res.status(400).json({ success: false, message: multerErr.message });
+        }
+        next();
+    });
+}, async (req, res) => {
     try {
         if (!req.file) {
             return res.status(400).json({ success: false, message: 'No file uploaded' });
@@ -56,7 +67,7 @@ router.post('/analyze', protect, upload.single('report'), async (req, res) => {
         if (!extractedText || extractedText.trim().length < 10) {
             return res.status(400).json({
                 success: false,
-                message: 'This appears to be a scanned PDF or contains no extractable text. Text extraction failed. Please upload a digital PDF.'
+                message: 'This appears to be a scanned or image-based PDF with no extractable text. Please upload a digital (text-based) PDF.'
             });
         }
 
@@ -98,8 +109,20 @@ Return this exact structure:
 }`;
 
         const rawText = await llmFallback.analyze(systemPrompt, `Lab Report Text:\n${extractedText}`);
-        const cleanJson = rawText.replace(/```json|```/g, '').trim();
-        const analysis = JSON.parse(cleanJson);
+
+        // Robust JSON extraction — strip markdown fences and trailing noise
+        let analysis;
+        try {
+            const jsonMatch = rawText.match(/\{[\s\S]*\}/);
+            if (!jsonMatch) throw new Error('No JSON object found in LLM response');
+            analysis = JSON.parse(jsonMatch[0]);
+        } catch (jsonErr) {
+            console.error('JSON parse error:', jsonErr.message, '\nRaw LLM output:', rawText?.slice(0, 500));
+            return res.status(422).json({
+                success: false,
+                message: 'The AI could not produce a structured analysis for this report. Try a cleaner digital PDF or a different report.'
+            });
+        }
 
         if (!analysis.results || analysis.results.length === 0) {
             return res.status(400).json({
@@ -124,7 +147,7 @@ Return this exact structure:
         res.json({ success: true, report: mapReport(report) });
     } catch (err) {
         console.error('Lab Analysis Error:', err);
-        res.status(500).json({ success: false, message: err.message });
+        res.status(500).json({ success: false, message: err.message || 'Internal server error' });
     }
 });
 
