@@ -73,20 +73,21 @@ const LabReportAnalyzer = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
                     <div>
                         <div className="flex items-center gap-3 mb-2">
-                            <div className="bg-primary/20 p-2 rounded-lg">
-                                <Beaker className="w-6 h-6 text-primary" />
+                            <div className="p-2" style={{background:'var(--tag-bg)',border:'1px solid var(--tag-border)'}}>
+                                <Beaker className="w-5 h-5" style={{color:'var(--accent)'}} />
                             </div>
-                            <h1 className="text-4xl font-black text-white uppercase tracking-tighter">Lab Report Analyzer</h1>
+                            <h1 className="text-4xl font-bold">Lab Report Analyzer</h1>
                         </div>
-                        <p className="text-gray-400 text-lg">Upload blood tests for instant medical-grade AI explanation</p>
+                        <p className="text-lg" style={{color:'var(--text-secondary)'}}>Upload blood tests for instant medical-grade AI explanation</p>
                     </div>
                     
                     {latestPrediction && (
-                        <div className="bg-blue-500/10 border border-blue-500/30 p-4 rounded-2xl flex items-center gap-4 max-w-sm">
-                            <Activity className="w-10 h-10 text-blue-500 shrink-0" />
+                        <div className="p-4 flex items-center gap-4 max-w-sm"
+                            style={{background:'rgba(22,163,74,0.06)',border:'1px solid var(--border-accent)'}}>
+                            <Activity className="w-9 h-9 flex-shrink-0" style={{color:'var(--accent)'}} />
                             <div>
-                                <p className="text-xs text-blue-300 uppercase font-bold tracking-widest leading-none mb-1">Recent Symptom Insight</p>
-                                <p className="text-sm text-gray-200 line-clamp-2">Connected to your last diagnosis: <span className="text-white font-bold">{latestPrediction.disease.name}</span></p>
+                                <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{color:'var(--accent)'}}>Recent Symptom Insight</p>
+                                <p className="text-sm" style={{color:'var(--text-secondary)'}}>Connected to: <span className="font-bold" style={{color:'var(--text-primary)'}}>{latestPrediction.disease.name}</span></p>
                             </div>
                         </div>
                     )}
@@ -106,44 +107,44 @@ const LabReportAnalyzer = () => {
                             <button
                                 onClick={handleAnalyze}
                                 disabled={!file || loading}
-                                className="w-full btn-primary px-8 py-5 rounded-2xl text-xl font-bold flex items-center justify-center gap-3 disabled:opacity-50 transition-all hover:scale-[1.02] shadow-xl shadow-primary/20"
+                                className="w-full btn-primary px-8 py-4 text-base font-bold flex items-center justify-center gap-3 disabled:opacity-50"
                             >
                                 <FileText className="w-6 h-6" />
                                 {loading ? 'Processing Medical Data...' : 'Analyze Report Now'}
                             </button>
 
                             {error && (
-                                <motion.div 
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    className="bg-red-500/10 border border-red-500/30 p-4 rounded-xl flex gap-3 text-red-500"
-                                >
-                                    <AlertTriangle className="w-5 h-5 shrink-0" />
-                                    <p className="text-sm font-medium">{error}</p>
+                                <motion.div initial={{opacity:0}} animate={{opacity:1}}
+                                    className="px-4 py-3 flex gap-3 text-sm"
+                                    style={{background:'rgba(239,68,68,0.06)',border:'1px solid rgba(239,68,68,0.2)',color:'#ef4444'}}>
+                                    <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                                    {error}
                                 </motion.div>
                             )}
 
                             {/* Recent Analysis Section */}
                             {history.length > 0 && (
-                                <div className="mt-12 pt-12 border-t border-white/5">
-                                    <h3 className="text-gray-300 font-bold uppercase text-xs tracking-widest mb-4">Historical Records</h3>
+                                <div className="mt-12 pt-12 border-t" style={{borderColor:'var(--border)'}}>
+                                    <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{color:'var(--text-muted)'}}>Historical Records</h3>
                                     <div className="space-y-3">
                                         {history.slice(0, 3).map((item, i) => (
-                                            <div 
-                                                key={i} 
+                                            <div
+                                                key={i}
                                                 onClick={() => setReport(item)}
-                                                className="glass-card p-4 rounded-xl flex items-center justify-between hover:bg-white/5 transition-all cursor-pointer group"
-                                            >
-                                                <div className="flex items-center gap-4">
-                                                    <div className="bg-gray-800 p-2 rounded-lg text-gray-400 group-hover:text-primary transition-colors">
-                                                        <FileText className="w-5 h-5" />
+                                                className="flex items-center justify-between p-4 cursor-pointer transition-colors"
+                                                style={{border:'1px solid var(--border)',background:'var(--bg-surface)'}}
+                                                onMouseEnter={e=>e.currentTarget.style.background='var(--bg-elevated)'}
+                                                onMouseLeave={e=>e.currentTarget.style.background='var(--bg-surface)'}>
+                                                <div className="flex items-center gap-3">
+                                                    <div className="p-2" style={{background:'var(--bg-elevated)',color:'var(--text-secondary)'}}>
+                                                        <FileText className="w-4 h-4" />
                                                     </div>
                                                     <div>
-                                                        <p className="text-white font-bold">{item.fileName}</p>
-                                                        <p className="text-xs text-gray-500">{new Date(item.createdAt).toLocaleDateString()}</p>
+                                                        <p style={{color:'var(--text-primary)'}} className="font-bold">{item.fileName}</p>
+                                                        <p className="text-xs" style={{color:'var(--text-muted)'}}>{new Date(item.createdAt).toLocaleDateString()}</p>
                                                     </div>
                                                 </div>
-                                                <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-white" />
+                                                <ChevronRight className="w-5 h-5" style={{color:'var(--text-muted)'}} />
                                             </div>
                                         ))}
                                     </div>
@@ -159,10 +160,12 @@ const LabReportAnalyzer = () => {
                             ref={reportRef}
                         >
                             {/* Action Buttons (Floating at top or visible fixed) */}
-                            <div className="flex justify-between items-center bg-gray-900/50 backdrop-blur-xl p-4 rounded-2xl sticky top-24 z-30 border border-white/10 no-print">
+                            <div className="flex justify-between items-center p-4 sticky top-24 z-30 no-print"
+                                style={{background:'var(--bg-elevated)',border:'1px solid var(--border)'}}>
                                 <button
                                     onClick={() => setReport(null)}
-                                    className="text-gray-400 hover:text-white flex items-center gap-2 font-medium"
+                                    className="flex items-center gap-2 font-medium"
+                                    style={{color:'var(--text-secondary)'}}
                                 >
                                     ← Analyze new report
                                 </button>
@@ -170,17 +173,8 @@ const LabReportAnalyzer = () => {
                             </div>
 
                             {/* Patient Info Strip */}
-                            <div className="glass-card p-6 rounded-2xl overflow-hidden relative">
-                              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
-                              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
-                                <div>
-                                  <p className="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Patient Name</p>
-                                  <p className="text-lg font-bold text-white capitalize">{report.analysis.patient?.name || 'N/A'}</p>
-                                </div>
-                                <div>
-                                  <p className="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Report Date</p>
-                                  <p className="text-lg font-bold text-white">{report.analysis.patient?.date || new Date().toLocaleDateString()}</p>
-                                </div>
+                            <div className="p-6" style={{border:'1px solid var(--border)',background:'var(--bg-surface)'}}>
+                               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
                                 <div>
                                   <p className="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Medical Facility</p>
                                   <p className="text-lg font-bold text-white truncate">{report.analysis.patient?.lab || 'Detected Laboratory'}</p>
@@ -193,9 +187,9 @@ const LabReportAnalyzer = () => {
                             </div>
 
                             {/* Overall Insights */}
-                            <div className="bg-gradient-to-r from-primary/10 to-transparent p-8 rounded-2xl border border-primary/20">
-                                <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter mb-2">Internal Health Context</h3>
-                                <p className="text-gray-300 text-lg leading-relaxed italic">"{report.analysis.overallInsight}"</p>
+                            <div className="p-6" style={{border:'1px solid var(--border-accent)',background:'var(--bg-elevated)'}}>
+                                <h3 className="text-xl font-bold mb-2">Internal Health Context</h3>
+                                <p className="leading-relaxed" style={{color:'var(--text-secondary)',fontStyle:'italic'}}>"{report.analysis.overallInsight}"</p>
                             </div>
 
                             <SummaryCard summary={report.analysis.summary} />

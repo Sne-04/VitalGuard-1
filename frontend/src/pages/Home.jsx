@@ -98,16 +98,14 @@ export default function Home() {
                         </span>
                     </motion.div>
 
-                    <motion.h1
-                        className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
-                        style={{ fontFamily: 'Playfair Display, Georgia, serif' }}
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.06] mb-6"
                         {...fadeUp(0.1)}
                     >
                         Your health,{' '}
                         <span style={{ color: 'var(--accent)' }}>understood</span>
                         <br />
                         <em style={{ fontStyle: 'italic', fontWeight: 400 }}>by AI</em>
-                    </motion.h1>
+                    </h1>
 
                     <motion.p
                         className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
