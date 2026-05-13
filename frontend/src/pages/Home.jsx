@@ -48,7 +48,7 @@ const TEAM = [
         role: 'Full Stack Developer & AI Engineer',
         bio: 'Leads backend architecture and AI integration. Passionate about making healthcare more intelligent and accessible.',
         image: '/sneha.png',
-        socials: { github: '#', linkedin: '#' },
+        socials: { github: 'https://github.com/Sne-04', linkedin: 'https://www.linkedin.com/in/sneha-shaw23' },
     },
     {
         name: 'Baishaksi Singha',
@@ -401,12 +401,25 @@ export default function Home() {
                         </span>
                     </div>
                     <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                        © 2025 VitalGuard AI · Built with ML, IoT & Computer Vision
+                        © 2025 VitalGuard AI · Final Year Project · Built with ML, IoT &amp; Computer Vision
                     </p>
-                    <div className="flex gap-5 text-xs" style={{ color: 'var(--text-muted)' }}>
-                        <span className="cursor-pointer hover:text-current" style={{ '--tw-text-opacity': 1 }}>Privacy</span>
-                        <span className="cursor-pointer">Terms</span>
-                        <span className="cursor-pointer">Contact</span>
+                    <div className="flex gap-4 text-xs items-center" style={{ color: 'var(--text-muted)' }}>
+                        <a href="https://github.com/Sne-04/VitalGuard-1"
+                            target="_blank" rel="noopener noreferrer"
+                            className="flex items-center gap-1.5 transition-colors"
+                            style={{ color: 'var(--text-muted)' }}
+                            onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
+                            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}>
+                            <Github className="w-3.5 h-3.5" /> Source Code
+                        </a>
+                        <a href="https://www.linkedin.com/in/sneha-shaw23"
+                            target="_blank" rel="noopener noreferrer"
+                            className="flex items-center gap-1.5 transition-colors"
+                            style={{ color: 'var(--text-muted)' }}
+                            onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
+                            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}>
+                            <Linkedin className="w-3.5 h-3.5" /> Team
+                        </a>
                     </div>
                 </div>
             </footer>
