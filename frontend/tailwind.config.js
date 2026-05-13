@@ -22,8 +22,9 @@ export default {
                 }
             },
             fontFamily: {
-                sans: ['Inter', 'system-ui', 'sans-serif'],
-                mono: ['JetBrains Mono', 'monospace']
+                sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                display: ['Sora', 'Plus Jakarta Sans', 'sans-serif'],
+                mono: ['JetBrains Mono', 'monospace'],
             },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-in',
